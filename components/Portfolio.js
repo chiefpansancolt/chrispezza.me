@@ -1,4 +1,4 @@
-import projects from "@/data/projects"
+import projects from '@/data/projects'
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
@@ -14,18 +14,39 @@ export default function Portfolio() {
           {projects.map((project) => (
             <li key={project.id} className="relative">
               <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-orange-100 focus-within:ring-orange-500 overflow-hidden">
-                <img src={project.source} alt={project.title} className="object-cover pointer-events-none group-hover:opacity-75" />
-                <button type="button" className="absolute inset-0 focus:outline-none" onClick={() => { setOpen(true); setView(project.id);}}>
+                <img
+                  src={project.source}
+                  alt={project.title}
+                  className="object-cover pointer-events-none group-hover:opacity-75"
+                />
+                <button
+                  type="button"
+                  className="absolute inset-0 focus:outline-none"
+                  onClick={() => {
+                    setOpen(true)
+                    setView(project.id)
+                  }}
+                >
                   <span className="sr-only">View details for {project.title}</span>
                 </button>
               </div>
-              <p className="mt-2 block text-sm font-medium text-gray-50 truncate pointer-events-none">{project.title}</p>
-              <p className="block text-sm font-medium text-gray-300 pointer-events-none">{project.type}</p>
+              <p className="mt-2 block text-sm font-medium text-gray-50 truncate pointer-events-none">
+                {project.title}
+              </p>
+              <p className="block text-sm font-medium text-gray-300 pointer-events-none">
+                {project.type}
+              </p>
             </li>
           ))}
         </ul>
         <Transition.Root show={open} as={Fragment}>
-          <Dialog as="div" static className="fixed z-10 inset-0 overflow-y-auto" open={open} onClose={setOpen}>
+          <Dialog
+            as="div"
+            static
+            className="fixed z-10 inset-0 overflow-y-auto"
+            open={open}
+            onClose={setOpen}
+          >
             <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
               <Transition.Child
                 as={Fragment}
@@ -40,7 +61,10 @@ export default function Portfolio() {
               </Transition.Child>
 
               {/* This element is to trick the browser into centering the modal contents. */}
-              <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">
+              <span
+                className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                aria-hidden="true"
+              >
                 &#8203;
               </span>
               <Transition.Child
@@ -71,7 +95,10 @@ export default function Portfolio() {
                       <div className="mt-2">
                         <Dialog.Description as="div" className="text-sm text-gray-500">
                           {projects.map((project) => (
-                            <div key={`${project.id}-details`} className={`${view === project.id ? "" : "hidden"}`}>
+                            <div
+                              key={`${project.id}-details`}
+                              className={`${view === project.id ? '' : 'hidden'}`}
+                            >
                               {project.description}
                             </div>
                           ))}

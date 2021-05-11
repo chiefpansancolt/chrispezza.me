@@ -22,7 +22,7 @@ export const resources = [
   { name: 'BlueJeans', type: 'Software' },
   { name: 'Webex', type: 'Software' },
   { name: 'GoTo Meeting', type: 'Software' },
-  { name: 'Workday', type: 'Software' }
+  { name: 'Workday', type: 'Software' },
 ]
 
 export default resources

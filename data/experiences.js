@@ -64,7 +64,7 @@ export const experiences = [
         <span class="block">Maintain a Customer Based Relationship while helping customer maintain a clean and functioning software package on the Salesforce Platform.</span>
         <span class="block">Custom Code Visual Force Pages with Controllers.</span>
         <span class="block">Create Custom Objects.</span>
-        <span class="block">Configure and Customize the Salesforce platform.</span>`
+        <span class="block">Configure and Customize the Salesforce platform.</span>`,
       },
       {
         name: 'Customer Success - Intern',

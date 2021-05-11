@@ -7,7 +7,10 @@ import resources from '@/data/resources'
 export default function Work() {
   return (
     <div className="bg-white">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 divide-y divide-gray-200" id="education">
+      <div
+        className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 divide-y divide-gray-200"
+        id="education"
+      >
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pb-8">
           <div className="flex justify-center">
             <h4 className="text-xl">
@@ -38,7 +41,9 @@ export default function Work() {
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pt-16" id="work">
           <div className="flex justify-center">
             <h4 className="text-xl">
-              <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">Work</span>
+              <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
+                Work
+              </span>
             </h4>
           </div>
           <div className="col-span-2">
@@ -126,7 +131,10 @@ export default function Work() {
                     </div>
                   </div>
                   <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-blue-200 w-11/12">
-                    <div style={skill.style} className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"></div>
+                    <div
+                      style={skill.style}
+                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
+                    ></div>
                   </div>
                 </div>
               ))}
@@ -134,21 +142,30 @@ export default function Work() {
             <div className="pt-4 w-11/12">
               {resources.map((resource) => (
                 <>
-                  {resource.type === 'Software' &&
-                    <span key={resource.name} className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">
+                  {resource.type === 'Software' && (
+                    <span
+                      key={resource.name}
+                      className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800"
+                    >
                       {resource.name}
                     </span>
-                  }
-                  {resource.type === 'Programs' &&
-                    <span key={resource.name} className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-purple-100 text-purple-800">
+                  )}
+                  {resource.type === 'Programs' && (
+                    <span
+                      key={resource.name}
+                      className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-purple-100 text-purple-800"
+                    >
                       {resource.name}
                     </span>
-                  }
-                  {resource.type === 'Operating System' &&
-                    <span key={resource.name} className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100 text-blue-800">
+                  )}
+                  {resource.type === 'Operating System' && (
+                    <span
+                      key={resource.name}
+                      className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100 text-blue-800"
+                    >
                       {resource.name}
                     </span>
-                  }
+                  )}
                 </>
               ))}
             </div>
