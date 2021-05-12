@@ -31,13 +31,13 @@ export default function About() {
               </a>
             </div>
             <div className="ml-16">
-              <button
-                type="button"
+              <a
+                href="https://www.linkedin.com/in/pezzachristopher"
                 className="mt-4 inline-flex items-center px-4 py-2 border border-transparent shadow-lg text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
               >
                 <DownloadIcon className="-ml-0.5 mr-2 h-4 w-4" aria-hidden="true" />
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>

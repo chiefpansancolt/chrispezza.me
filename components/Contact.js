@@ -17,7 +17,6 @@ export default function Contact() {
                   viewBox="0 0 343 388"
                   fill="none"
                   preserveAspectRatio="xMidYMid slice"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M-99 461.107L608.107-246l707.103 707.107-707.103 707.103L-99 461.107z"
@@ -50,7 +49,6 @@ export default function Contact() {
                   viewBox="0 0 359 339"
                   fill="none"
                   preserveAspectRatio="xMidYMid slice"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M-161 382.107L546.107-325l707.103 707.107-707.103 707.103L-161 382.107z"
@@ -83,7 +81,6 @@ export default function Contact() {
                   viewBox="0 0 160 678"
                   fill="none"
                   preserveAspectRatio="xMidYMid slice"
-                  xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
                     d="M-161 679.107L546.107-28l707.103 707.107-707.103 707.103L-161 679.107z"
@@ -121,7 +118,7 @@ export default function Contact() {
               </dl>
               <ul className="mt-8 flex space-x-12">
                 <li>
-                  <a className="text-gray-200 hover:text-indigo-400" href="#">
+                  <a className="text-gray-200 hover:text-indigo-400" href="https://discord.gg/fzXW3rW">
                     <span className="sr-only">Discord</span>
                     <svg
                       width="24"
@@ -129,7 +126,6 @@ export default function Contact() {
                       fillRule="evenodd"
                       clipRule="evenodd"
                       fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
                       aria-hidden="true"
                     >
@@ -138,14 +134,13 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-black" href="#">
+                  <a className="text-gray-200 hover:text-black" href="https://github.com/chiefpansancolt">
                     <span className="sr-only">GitHub</span>
                     <svg
                       width={24}
                       height={24}
                       viewBox="0 0 24 24"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
                       aria-hidden="true"
                     >
@@ -157,14 +152,13 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-light-blue-500" href="#">
+                  <a className="text-gray-200 hover:text-light-blue-500" href="https://twitter.com/chiefpansancolt">
                     <span className="sr-only">Twitter</span>
                     <svg
                       width={24}
                       height={24}
                       viewBox="0 0 24 24"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
                       className="w-6 h-6"
                       aria-hidden="true"
                     >
@@ -176,10 +170,9 @@ export default function Contact() {
                   </a>
                 </li>
                 <li>
-                  <a className="text-gray-200 hover:text-blue-400" href="#">
+                  <a className="text-gray-200 hover:text-blue-400" href="https://linkedin.com/in/pezzachristopher">
                     <span className="sr-only">LinkedIn</span>
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="currentColor"
                       class="w-6 h-6"
@@ -191,7 +184,6 @@ export default function Contact() {
               </ul>
             </div>
 
-            {/* Contact form */}
             <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
               <h3 className="text-lg font-medium text-gray-900">Send me a message</h3>
               <form
@@ -253,9 +245,6 @@ export default function Contact() {
                     <label htmlFor="message" className="block text-sm font-medium text-gray-900">
                       Message
                     </label>
-                    <span id="message-max" className="text-sm text-gray-500">
-                      Max. 500 characters
-                    </span>
                   </div>
                   <div className="mt-1">
                     <textarea

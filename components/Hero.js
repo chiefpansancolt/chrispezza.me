@@ -144,7 +144,7 @@ export default function Hero() {
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           src="/img/Family.jpg"
-          alt=""
+          alt="Chris Pezza Family"
         />
       </div>
     </div>

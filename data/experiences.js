@@ -6,6 +6,14 @@ export const experiences = [
     position: 'Streamer/Content Creator',
     first: true,
     positions: [],
+    description: `
+      <span class="block">- Stream Live 4 times a week Video Games and Coding projects.</span>
+      <span class="block prose">- <a href="https://twitch.tv/chiefpansancolt">https://twitch.tv/chiefpansancolt</a></span>
+      <span class="block prose">- <a href="https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w">https://youtube.com/channel/UCDiSj1nIsOnMHo3IASiN-3w</a></span>
+      <span class="block">- Create Content for YouTube with Video Game Highlights and Tutorial Videos for Development.</span>
+      <span class="block">- Editing Videos</span>
+      <span class="block">- Creation of YouTube Thumbnails</span>
+      <span class="block">- Creation of Video capture overlays.</span>`
   },
   {
     company: 'nCino, Inc.',
