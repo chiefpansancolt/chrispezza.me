@@ -5,12 +5,12 @@ import { XIcon } from '@heroicons/react/solid'
 
 export default function Success() {
   const [success, setSuccess] = useState(false)
-  
+
   useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
-      setSuccess(true);
+    if (window.location.search.includes('success=true')) {
+      setSuccess(true)
     }
-  }, []);
+  }, [])
 
   return (
     <>
@@ -37,7 +37,9 @@ export default function Success() {
                   </div>
                   <div className="ml-3 w-0 flex-1 pt-0.5">
                     <p className="text-sm font-medium text-gray-900">Successfully sent!</p>
-                    <p className="mt-1 text-sm text-gray-500">Your message has been sent to Chris, thank you!</p>
+                    <p className="mt-1 text-sm text-gray-500">
+                      Your message has been sent to Chris, thank you!
+                    </p>
                   </div>
                   <div className="ml-4 flex-shrink-0 flex">
                     <button

@@ -4,7 +4,7 @@ import Success from './Success'
 export default function Contact() {
   return (
     <div className="bg-gray-100" id="contact">
-      <Success/>
+      <Success />
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact me</h2>
@@ -206,7 +206,9 @@ export default function Contact() {
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="hidden">
-                  <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                  <label>
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                  </label>
                 </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="name" className="block text-sm font-medium text-gray-900">
