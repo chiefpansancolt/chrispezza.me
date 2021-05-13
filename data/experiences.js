@@ -13,7 +13,7 @@ export const experiences = [
       <span class="block">- Create Content for YouTube with Video Game Highlights and Tutorial Videos for Development.</span>
       <span class="block">- Editing Videos</span>
       <span class="block">- Creation of YouTube Thumbnails</span>
-      <span class="block">- Creation of Video capture overlays.</span>`
+      <span class="block">- Creation of Video capture overlays.</span>`,
   },
   {
     company: 'nCino, Inc.',

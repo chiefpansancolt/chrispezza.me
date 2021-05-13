@@ -95,9 +95,7 @@ export default function Work() {
                     </ul>
                   </div>
                 ) : (
-                  <div className="pt-4">
-                    {ReactHtmlParser(experience.description)}
-                  </div>
+                  <div className="pt-4">{ReactHtmlParser(experience.description)}</div>
                 )}
               </div>
             ))}
@@ -129,39 +127,27 @@ export default function Work() {
                     <div
                       style={skill.style}
                       className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
-                    ></div>
+                    />
                   </div>
                 </div>
               ))}
             </div>
             <div className="pt-4 w-11/12">
               {resources.map((resource) => (
-                <>
-                  {resource.type === 'Software' && (
-                    <span
-                      key={resource.name}
-                      className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800"
-                    >
-                      {resource.name}
-                    </span>
-                  )}
-                  {resource.type === 'Programs' && (
-                    <span
-                      key={resource.name}
-                      className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-purple-100 text-purple-800"
-                    >
-                      {resource.name}
-                    </span>
-                  )}
-                  {resource.type === 'Operating System' && (
-                    <span
-                      key={resource.name}
-                      className="inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100 text-blue-800"
-                    >
-                      {resource.name}
-                    </span>
-                  )}
-                </>
+                <span
+                  key={resource.name}
+                  className={`
+                  inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium
+                  ${
+                    resource.type === 'Software'
+                      ? 'bg-red-100 text-red-800'
+                      : resource.type === 'Programs'
+                      ? 'bg-purple-100 text-purple-800'
+                      : 'bg-blue-100 text-blue-800'
+                  }`}
+                >
+                  {resource.name}
+                </span>
               ))}
             </div>
           </div>
