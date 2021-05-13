@@ -1,8 +1,10 @@
 import { MailIcon } from '@heroicons/react/outline'
+import Success from './Success'
 
 export default function Contact() {
   return (
     <div className="bg-gray-100" id="contact">
+      <Success/>
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact me</h2>
@@ -196,7 +198,7 @@ export default function Contact() {
               <h3 className="text-lg font-medium text-gray-900">Send me a message</h3>
               <form
                 method="POST"
-                action="/success"
+                action="/?success=true"
                 className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 name="contact"
                 data-netlify-honeypot="bot-field"

@@ -1,10 +1,16 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import { CheckCircleIcon } from '@heroicons/react/outline'
 import { XIcon } from '@heroicons/react/solid'
 
 export default function Success() {
-  const [show, setShow] = useState(true)
+  const [success, setSuccess] = useState(false)
+  
+  useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setSuccess(true);
+    }
+  }, []);
 
   return (
     <>
@@ -14,7 +20,7 @@ export default function Success() {
       >
         <div className="w-full flex flex-col items-center space-y-4 sm:items-end">
           <Transition
-            show={show}
+            show={success}
             as={Fragment}
             enter="transform ease-out duration-300 transition"
             enterFrom="translate-y-2 opacity-0 sm:translate-y-0 sm:translate-x-2"
@@ -37,7 +43,7 @@ export default function Success() {
                     <button
                       className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       onClick={() => {
-                        setShow(false)
+                        setSuccess(false)
                       }}
                     >
                       <span className="sr-only">Close</span>
