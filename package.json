@@ -5,14 +5,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier '{pages,components,data}/**/*.{css,js,mdx}' --write"
+    "format": "prettier '{pages,components,data}/**/*.{css,js,mdx}' --write",
+    "lint": "eslint components/ data/ pages/ next.config.js postcss.config.js prettier.config.js tailwind.config.js"
   },
   "dependencies": {
     "@headlessui/react": "^1.1.1",
     "@heroicons/react": "^1.0.1",
-    "@mdx-js/loader": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "@next/mdx": "^10.2.0",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.3.2",
     "@tailwindcss/line-clamp": "^0.2.0",
