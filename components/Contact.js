@@ -196,13 +196,16 @@ export default function Contact() {
               <h3 className="text-lg font-medium text-gray-900">Send me a message</h3>
               <form
                 method="POST"
+                action="/success"
                 className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
                 name="contact"
-                data-netlify-recaptcha="true"
                 data-netlify-honeypot="bot-field"
                 data-netlify="true"
               >
                 <input type="hidden" name="form-name" value="contact" />
+                <div className="hidden">
+                  <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                </div>
                 <div className="sm:col-span-2">
                   <label htmlFor="name" className="block text-sm font-medium text-gray-900">
                     Name
@@ -259,13 +262,11 @@ export default function Contact() {
                       name="message"
                       rows={4}
                       className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
-                      aria-describedby="message-max"
                       defaultValue={''}
                     />
                   </div>
                 </div>
-                <div className="sm:col-span-2 sm:flex sm:justify-between">
-                  <div data-netlify-recaptcha="true"></div>
+                <div className="sm:col-span-2 sm:flex sm:justify-end">
                   <button
                     type="submit"
                     className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto"
