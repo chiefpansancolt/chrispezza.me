@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { DownloadIcon } from '@heroicons/react/solid'
-import headshot from '@/img/chris-pezza.jpg'
+import headshot from '@/img/chris-pezza.JPG'
 
 export default function About() {
   return (
