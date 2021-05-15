@@ -1,15 +1,20 @@
+import Image from 'next/image'
 import { DownloadIcon } from '@heroicons/react/solid'
+import headshot from '@/img/chris-pezza.jpg'
 
 export default function About() {
   return (
     <div className="bg-blue-700" id="about">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-        <div className=" flex justify-end">
-          <img
-            className="inline-block h-32 w-32 rounded-full mr-8"
-            src="/img/chris-pezza.jpg"
-            alt=""
-          />
+        <div className="flex justify-end">
+          <div className="relative h-32 w-32">
+            <Image
+              className="inline-block rounded-full mr-8"
+              src={headshot}
+              alt="Christopher Pezza Headshot"
+              layout="fill"
+            />
+          </div>
         </div>
         <div className="col-span-2">
           <h2 className="text-xl font-semibold text-gray-50 tracking-wide uppercase">About Me</h2>

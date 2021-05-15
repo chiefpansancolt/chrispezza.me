@@ -125,8 +125,7 @@ export default function Work() {
                   </div>
                   <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-blue-200 w-11/12">
                     <div
-                      style={skill.style}
-                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
+                      className={`shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500 ${skill.class}`}
                     />
                   </div>
                 </div>

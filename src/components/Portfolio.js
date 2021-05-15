@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import projects from '@/data/projects'
 import { Fragment, useState } from 'react'
 import ReactHtmlParser from 'react-html-parser'
@@ -15,10 +16,11 @@ export default function Portfolio() {
           {projects.map((project) => (
             <li key={project.id} className="relative">
               <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-orange-100 focus-within:ring-orange-500 overflow-hidden">
-                <img
+                <Image
                   src={project.source}
                   alt={project.title}
                   className="object-cover pointer-events-none group-hover:opacity-75"
+                  layout="fill"
                 />
                 <button
                   type="button"
