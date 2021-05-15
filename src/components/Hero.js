@@ -52,10 +52,7 @@ export default function Hero() {
                     </div>
                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                       {navigation.map((item) => (
-                        <Link
-                          key={item.name}
-                          href={item.href}
-                        >
+                        <Link key={item.name} href={item.href}>
                           <a className="font-medium text-gray-500 hover:text-gray-900">
                             {item.name}
                           </a>
@@ -83,11 +80,7 @@ export default function Hero() {
                     <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="px-5 pt-4 flex items-center justify-between">
                         <div>
-                          <img
-                            className="h-8 w-auto"
-                            src={logo}
-                            alt="Christopher Pezza Logo"
-                          />
+                          <img className="h-8 w-auto" src={logo} alt="Christopher Pezza Logo" />
                         </div>
                         <div className="-mr-2">
                           <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -98,10 +91,7 @@ export default function Hero() {
                       </div>
                       <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
-                          <link
-                            key={item.name}
-                            href={item.href}
-                          >
+                          <link key={item.name} href={item.href}>
                             <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                               {item.name}
                             </a>

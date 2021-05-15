@@ -13,8 +13,11 @@ const projects = [
     title: 'Chiefpansancolt.live',
     type: 'Website',
     source: chiefpansancolt,
-    description: `
-      <img src="` + chiefpansancolt + `" alt="Chiefpansancolt Website" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      chiefpansancolt +
+      `" alt="Chiefpansancolt Website" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This website was built to represent Chris's Persona of Chiefpansancolt online such as doucmentation
@@ -54,8 +57,11 @@ const projects = [
     title: 'Simplcov Tailwind',
     type: 'Ruby Gem',
     source: simplecovTailwind,
-    description: `
-      <img src="` + simplecovTailwind + `" alt="Simplecov Tailwind View" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      simplecovTailwind +
+      `" alt="Simplecov Tailwind View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This Gem was built with the mindset that the original <a href="https://github.com/simplecov-ruby/simplecov">Simplecov HTML</a> view was ugly looking and needed a revamp.
@@ -91,8 +97,11 @@ const projects = [
     title: 'Simplecov Material',
     type: 'Ruby Gem',
     source: simplecovMaterial,
-    description: `
-      <img src="` + simplecovMaterial + `" alt="Simplecov Materal View" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      simplecovMaterial +
+      `" alt="Simplecov Materal View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This Gem was built with the mindset that the original <a href="https://github.com/simplecov-ruby/simplecov">Simplecov HTML</a> view was ugly looking and needed a revamp.
@@ -124,8 +133,11 @@ const projects = [
     title: 'Package Builder',
     type: 'Salesforce Managed Package',
     source: packageBuilder,
-    description: `
-      <img src="` + packageBuilder + `" alt="Package Builder View" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      packageBuilder +
+      `" alt="Package Builder View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This package was built to give an easy way to generate a CLI command or Package XML output for a given Metadata Type.
@@ -161,8 +173,11 @@ const projects = [
     title: 'Feature Migrator',
     type: 'Website (Deprecated)',
     source: featureMigrator,
-    description: `
-      <img src="` + featureMigrator + `" alt="Feature Migrator View" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      featureMigrator +
+      `" alt="Feature Migrator View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This website was built for nCino to enable users to migrate nCino Configuration Data from one Salesforce environment to another
@@ -201,8 +216,11 @@ const projects = [
     title: 'Salesforce Projects',
     type: 'Salesforce',
     source: salesforce,
-    description: `
-      <img src="` + salesforce + `" alt="Salesforce Logo" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      salesforce +
+      `" alt="Salesforce Logo" class="w-full"/>
       <div>
         <p class="block p-4">
           Below are Salesforce Projects I have worked on at nCino and created to supliment the nCino Product that have since
@@ -398,8 +416,11 @@ const projects = [
     title: 'Ruby Gems Created',
     type: 'Ruby Gems',
     source: rubyGem,
-    description: `
-      <img src="` + rubyGem + `" alt="Ruby Gems Logo" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      rubyGem +
+      `" alt="Ruby Gems Logo" class="w-full"/>
       <div>
         <p class="block p-4">
           Below are Ruby Gems I have either created or contributed to in relation to Ruby on Rails.
@@ -493,8 +514,11 @@ const projects = [
     title: 'GitHub Contributions',
     type: 'GitHub',
     source: github,
-    description: `
-      <img src="` + github + `" alt="GitHub Logo" class="w-full"/>
+    description:
+      `
+      <img src="` +
+      github +
+      `" alt="GitHub Logo" class="w-full"/>
       <div>
         <p class="block p-4">
           Below are Various projects that I have contributed to on GitHub in some manner.
