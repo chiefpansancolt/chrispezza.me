@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
@@ -91,11 +90,11 @@ export default function Hero() {
                       </div>
                       <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
-                          <link key={item.name} href={item.href}>
+                          <Link key={item.name} href={item.href}>
                             <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
                               {item.name}
                             </a>
-                          </link>
+                          </Link>
                         ))}
                       </div>
                     </div>
@@ -138,16 +137,11 @@ export default function Hero() {
         </div>
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <div className="h-56 w-full sm:h-72 md:h-96 lg:w-full lg:h-full">
-          <Image
-            className="object-cover"
-            src={family}
-            alt="Chris Pezza Family"
-            layout="fill"
-            priority
-            loading="eager"
-          />
-        </div>
+        <img
+          className="h-56 w-full sm:h-72 md:h-96 lg:h-full object-cover"
+          src={family}
+          alt="Chris Pezza Family"
+        />
       </div>
     </div>
   )

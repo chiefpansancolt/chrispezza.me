@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className="bg-blue-700" id="about">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
-        <div className="flex justify-end">
+        <div className="flex justify-center mb-4 lg:mb-0 lg:justify-end">
           <div className="relative h-32 w-32">
             <Image
               className="inline-block rounded-full mr-8"
