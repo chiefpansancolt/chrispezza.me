@@ -1,11 +1,20 @@
+import chiefpansancolt from '@/img/projects/chiefpansancolt.live.png'
+import featureMigrator from '@/img/projects/Feature-Migrator.png'
+import github from '@/img/projects/github.png'
+import packageBuilder from '@/img/projects/Package-Builder.png'
+import rubyGem from '@/img/projects/ruby-gems.png'
+import salesforce from '@/img/projects/salesforce.png'
+import simplecovMaterial from '@/img/projects/simplecov-material.png'
+import simplecovTailwind from '@/img/projects/simplecov-tailwind.png'
+
 const projects = [
   {
     id: '1',
     title: 'Chiefpansancolt.live',
     type: 'Website',
-    source: '/img/projects/chiefpansancolt.live.png',
+    source: chiefpansancolt,
     description: `
-      <img src="/img/projects/chiefpansancolt.live.png" alt="Chiefpansancolt Website" class="w-full"/>
+      <img src="` + chiefpansancolt + `" alt="Chiefpansancolt Website" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This website was built to represent Chris's Persona of Chiefpansancolt online such as doucmentation
@@ -44,9 +53,9 @@ const projects = [
     id: '2',
     title: 'Simplcov Tailwind',
     type: 'Ruby Gem',
-    source: '/img/projects/simplecov-tailwind.png',
+    source: simplecovTailwind,
     description: `
-      <img src="/img/projects/simplecov-tailwind.png" alt="Simplecov Tailwind View" class="w-full"/>
+      <img src="` + simplecovTailwind + `" alt="Simplecov Tailwind View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This Gem was built with the mindset that the original <a href="https://github.com/simplecov-ruby/simplecov">Simplecov HTML</a> view was ugly looking and needed a revamp.
@@ -81,9 +90,9 @@ const projects = [
     id: '3',
     title: 'Simplecov Material',
     type: 'Ruby Gem',
-    source: '/img/projects/simplecov-material.png',
+    source: simplecovMaterial,
     description: `
-      <img src="/img/projects/simplecov-material.png" alt="Simplecov Materal View" class="w-full"/>
+      <img src="` + simplecovMaterial + `" alt="Simplecov Materal View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This Gem was built with the mindset that the original <a href="https://github.com/simplecov-ruby/simplecov">Simplecov HTML</a> view was ugly looking and needed a revamp.
@@ -114,9 +123,9 @@ const projects = [
     id: '4',
     title: 'Package Builder',
     type: 'Salesforce Managed Package',
-    source: '/img/projects/Package-Builder.png',
+    source: packageBuilder,
     description: `
-      <img src="/img/projects/Package-Builder.png" alt="Package Builder View" class="w-full"/>
+      <img src="` + packageBuilder + `" alt="Package Builder View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This package was built to give an easy way to generate a CLI command or Package XML output for a given Metadata Type.
@@ -151,9 +160,9 @@ const projects = [
     id: '5',
     title: 'Feature Migrator',
     type: 'Website (Deprecated)',
-    source: '/img/projects/Feature-Migrator.png',
+    source: featureMigrator,
     description: `
-      <img src="/img/projects/Feature-Migrator.png" alt="Feature Migrator View" class="w-full"/>
+      <img src="` + featureMigrator + `" alt="Feature Migrator View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This website was built for nCino to enable users to migrate nCino Configuration Data from one Salesforce environment to another
@@ -191,9 +200,9 @@ const projects = [
     id: '6',
     title: 'Salesforce Projects',
     type: 'Salesforce',
-    source: '/img/projects/salesforce.png',
+    source: salesforce,
     description: `
-      <img src="/img/projects/salesforce.png" alt="Salesforce Logo" class="w-full"/>
+      <img src="` + salesforce + `" alt="Salesforce Logo" class="w-full"/>
       <div>
         <p class="block p-4">
           Below are Salesforce Projects I have worked on at nCino and created to supliment the nCino Product that have since
@@ -388,9 +397,9 @@ const projects = [
     id: '7',
     title: 'Ruby Gems Created',
     type: 'Ruby Gems',
-    source: '/img/projects/ruby-gems.png',
+    source: rubyGem,
     description: `
-      <img src="/img/projects/ruby-gems.png" alt="Ruby Gems Logo" class="w-full"/>
+      <img src="` + rubyGem + `" alt="Ruby Gems Logo" class="w-full"/>
       <div>
         <p class="block p-4">
           Below are Ruby Gems I have either created or contributed to in relation to Ruby on Rails.
@@ -483,8 +492,9 @@ const projects = [
     id: '8',
     title: 'GitHub Contributions',
     type: 'GitHub',
-    source: '/img/projects/github.png',
-    description: `<img src="/img/projects/github.png" alt="GitHub Logo" class="w-full"/>
+    source: github,
+    description: `
+      <img src="` + github + `" alt="GitHub Logo" class="w-full"/>
       <div>
         <p class="block p-4">
           Below are Various projects that I have contributed to on GitHub in some manner.
