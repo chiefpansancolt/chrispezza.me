@@ -9,6 +9,7 @@
     "lint": "eslint src/ next.config.js postcss.config.js prettier.config.js tailwind.config.js"
   },
   "dependencies": {
+    "@badrap/bar-of-progress": "^0.1.2",
     "@headlessui/react": "^1.1.1",
     "@heroicons/react": "^1.0.1",
     "@tailwindcss/aspect-ratio": "^0.2.0",
