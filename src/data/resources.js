@@ -1,4 +1,4 @@
-export const resources = [
+const resources = [
   { name: 'Tailwind CSS', type: 'Programs' },
   { name: 'Heroicons', type: 'Programs' },
   { name: 'Font Awesome', type: 'Programs' },

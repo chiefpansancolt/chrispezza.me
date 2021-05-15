@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import projects from '@/data/projects'
 import { Fragment, useState } from 'react'
 import ReactHtmlParser from 'react-html-parser'
@@ -15,10 +16,11 @@ export default function Portfolio() {
           {projects.map((project) => (
             <li key={project.id} className="relative">
               <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-orange-100 focus-within:ring-orange-500 overflow-hidden">
-                <img
+                <Image
                   src={project.source}
                   alt={project.title}
                   className="object-cover pointer-events-none group-hover:opacity-75"
+                  layout="fill"
                 />
                 <button
                   type="button"
@@ -76,7 +78,7 @@ export default function Portfolio() {
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
                 <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-3xl sm:w-full">
-                  <div className="hidden sm:block absolute top-0 right-0 pt-4 pr-4">
+                  <div className="absolute top-0 right-0 pt-4 pr-4">
                     <button
                       type="button"
                       className="bg-white rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
@@ -95,7 +97,7 @@ export default function Portfolio() {
                         Project Details
                       </Dialog.Title>
                       <div className="mt-2">
-                        <Dialog.Description as="div" className="text-sm text-gray-500">
+                        <Dialog.Description as="div" className="text-sm text-gray-500 text-left">
                           {projects.map((project) => (
                             <div
                               key={`${project.id}-details`}

@@ -12,7 +12,7 @@ export default function Work() {
         id="education"
       >
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pb-8">
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-10 lg:mb-0">
             <h4 className="text-xl">
               <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
                 Education
@@ -39,7 +39,7 @@ export default function Work() {
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pt-16" id="work">
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-10 lg:mb-0">
             <h4 className="text-xl">
               <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
                 Work
@@ -102,7 +102,7 @@ export default function Work() {
           </div>
         </div>
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pt-16" id="skills">
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-10 lg:mb-0">
             <h4 className="text-xl">
               <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
                 Skills
@@ -125,8 +125,7 @@ export default function Work() {
                   </div>
                   <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-blue-200 w-11/12">
                     <div
-                      style={skill.style}
-                      className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
+                      className={`shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500 ${skill.class}`}
                     />
                   </div>
                 </div>
