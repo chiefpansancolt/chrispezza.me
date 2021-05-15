@@ -1,4 +1,4 @@
-export const skills = [
+const skills = [
   { name: 'HTML', progress: 100, style: { width: '100%' } },
   { name: 'CSS', progress: 80, style: { width: '80%' } },
   { name: 'JavaScript', progress: 60, style: { width: '60%' } },

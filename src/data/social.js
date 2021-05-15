@@ -1,4 +1,4 @@
-export const social = [
+const social = [
   {
     name: 'eFuse',
     href: 'https://efuse.gg/u/chiefpansancolt',

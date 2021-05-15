@@ -1,4 +1,4 @@
-export const educations = [
+const educations = [
   {
     id: '1',
     name: 'Howard Community College',

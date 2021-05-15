@@ -1,4 +1,4 @@
-export const experiences = [
+const experiences = [
   {
     company: 'Chiefpansancolt',
     start: 'October 2019',

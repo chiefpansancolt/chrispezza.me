@@ -1,4 +1,4 @@
-export const navigation = [
+const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Education', href: '#education' },
   { name: 'Work', href: '#work' },
