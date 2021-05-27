@@ -5,6 +5,7 @@ import Work from '@/components/Work'
 import Portfolio from '@/components/Portfolio'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
+import Certifications from '@/components/Certifications'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div>
         <Hero />
         <About />
+        <Certifications/>
         <Work />
         <Portfolio />
         <Contact />
