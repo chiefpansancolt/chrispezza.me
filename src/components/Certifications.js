@@ -1,5 +1,5 @@
-import salesforceCertifications from "@/data/salesforce_certifications"
-import Link from "next/link"
+import salesforceCertifications from '@/data/salesforce_certifications'
+import Link from 'next/link'
 
 export default function Certifications() {
   return (
@@ -18,11 +18,7 @@ export default function Certifications() {
           {salesforceCertifications.map((cert) => (
             <div key={cert.name} className="col-span-1 flex justify-center py-8 px-8 bg-gray-100">
               <Link href={cert.href}>
-                <img
-                  className="max-h-32 cursor-pointer"
-                  src={cert.img}
-                  alt={cert.name}
-                />
+                <img className="max-h-32 cursor-pointer" src={cert.img} alt={cert.name} />
               </Link>
             </div>
           ))}
