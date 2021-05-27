@@ -19,8 +19,6 @@ module.exports = {
       orange: colors.orange,
       red: colors.red,
       blue: colors.blue,
-      rose: colors.rose,
-      'light-blue': colors.lightBlue,
     },
   },
   variants: {
