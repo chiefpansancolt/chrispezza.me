@@ -44,9 +44,9 @@ const projects = [
     id: '2',
     title: 'Simplcov Tailwind',
     type: 'Ruby Gem',
-    source: '/img/projects/simplecov-tailwind.png',
+    source: '/img/projects/simplecov-tailwindcss.png',
     description: `
-      <img src="/img/projects/simplecov-tailwind.png" alt="Simplecov Tailwind View" class="w-full"/>
+      <img src="/img/projects/simplecov-tailwindcss.png" alt="Simplecov Tailwind View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
           This Gem was built with the mindset that the original <a href="https://github.com/simplecov-ruby/simplecov">Simplecov HTML</a> view was ugly looking and needed a revamp.
@@ -74,6 +74,7 @@ const projects = [
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">Ruby</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Stimulus</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Tailwind</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-yellow-100 text-yellow-800">esbuild</span>
         </div>
       </div>`,
   },
