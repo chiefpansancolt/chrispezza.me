@@ -1,7 +1,7 @@
 name: Trigger Netlify Build
-on:
-  release:
-    types: [prereleased, released]
+
+on: workflow_dispatch
+
 jobs:
   build:
     name: Request Netlify Webhook

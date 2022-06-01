@@ -1,27 +1,10 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/pages/**/*.js', './src/components/**/*.js', './src/data/**/*.js'],
-  darkMode: false,
+  content: [
+    './src/components/**/*.{js,jsx}',
+    './src/data/**/*.{js,jsx}',
+    './src/pages/**/*.{js,jsx}',
+  ],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-
-      black: '#000',
-      white: '#fff',
-
-      gray: colors.coolGray,
-      purple: colors.purple,
-      green: colors.green,
-      indigo: colors.indigo,
-      orange: colors.orange,
-      red: colors.red,
-      blue: colors.blue,
-    },
-  },
-  variants: {
     extend: {},
   },
   plugins: [
