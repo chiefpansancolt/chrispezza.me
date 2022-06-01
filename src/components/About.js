@@ -19,7 +19,7 @@ export default function About() {
           <h2 className="text-xl font-semibold text-slate-50 tracking-wide uppercase">About Me</h2>
           <p className="text-base text-white mt-4">
             I am a Master Delivery Consultant for nCino, Inc, a software company based in
-            Wilmington, NC. Going on 7 years now, I have moved up from an entry position of Support
+            Wilmington, NC. Going on 8 years now, I have moved up from an entry position of Support
             Engineer and have been given many opportunities which lead me into my current role as a
             Master Delivery Consultant. I live with my wife and daughter and our 5 pets, 2 dogs, 2
             cats and a bunny rabbit.
