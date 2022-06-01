@@ -2,6 +2,8 @@ const skills = [
   { name: 'HTML', progress: 100, class: 'w-full' },
   { name: 'CSS', progress: 80, class: 'w-4/5' },
   { name: 'JavaScript', progress: 60, class: 'w-3/5' },
+  { name: 'Apex', progress: 75, class: 'w-3/4' },
+  { name: 'Lightning Web Component (SF)', progress: 75, class: 'w-3/4' },
   { name: 'Ruby', progress: 25, class: 'w-1/4' },
   { name: 'Rubby on Rails', progress: 45, class: 'w-5/12' },
   { name: 'Salesforce', progress: 100, class: 'w-full' },
