@@ -36,14 +36,14 @@ export default function Success() {
                     <CheckCircleIcon className="h-6 w-6 text-green-400" aria-hidden="true" />
                   </div>
                   <div className="ml-3 w-0 flex-1 pt-0.5">
-                    <p className="text-sm font-medium text-gray-900">Successfully sent!</p>
-                    <p className="mt-1 text-sm text-gray-500">
+                    <p className="text-sm font-medium text-slate-900">Successfully sent!</p>
+                    <p className="mt-1 text-sm text-slate-500">
                       Your message has been sent to Chris, thank you!
                     </p>
                   </div>
                   <div className="ml-4 flex-shrink-0 flex">
                     <button
-                      className="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      className="bg-white rounded-md inline-flex text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                       onClick={() => {
                         setSuccess(false)
                       }}

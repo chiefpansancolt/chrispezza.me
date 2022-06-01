@@ -8,7 +8,7 @@ export default function Work() {
   return (
     <div className="bg-white">
       <div
-        className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 divide-y divide-gray-200"
+        className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 divide-y divide-slate-200"
         id="education"
       >
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pb-8">
@@ -69,13 +69,13 @@ export default function Work() {
                           <div className="relative pb-8">
                             {positionIdx !== experience.positions.length - 1 ? (
                               <span
-                                className="absolute top-1 left-1 -ml-px h-full w-0.5 bg-gray-200"
+                                className="absolute top-1 left-1 -ml-px h-full w-0.5 bg-slate-200"
                                 aria-hidden="true"
                               />
                             ) : null}
                             <div className="relative flex space-x-3">
                               <div>
-                                <span className="h-2 w-2 rounded-full flex items-center justify-center ring-8 ring-white bg-gray-400" />
+                                <span className="h-2 w-2 rounded-full flex items-center justify-center ring-8 ring-white bg-slate-400" />
                               </div>
                               <div className="min-w-0 flex-1 flex justify-between space-x-4 -mt-3 pl-4">
                                 <div>
@@ -111,7 +111,7 @@ export default function Work() {
           </div>
           <div className="col-span-2">
             <div className="block">
-              Below is Chris's skills ratings, software, programs, and os usage.
+              Below is Chris&apos;s skills ratings, software, programs, and os usage.
             </div>
             <div className="block pt-4">
               {skills.map((skill) => (

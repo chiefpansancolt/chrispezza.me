@@ -1,23 +1,22 @@
 import Image from 'next/image'
 import { DownloadIcon } from '@heroicons/react/solid'
-import headshot from '@/img/chris-pezza.JPG'
 
 export default function About() {
   return (
-    <div className="bg-blue-700" id="about">
+    <div className="bg-blue-600" id="about">
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
         <div className="flex justify-center mb-4 lg:mb-0 lg:justify-end">
           <div className="relative h-32 w-32">
             <Image
               className="inline-block rounded-full mr-8"
-              src={headshot}
+              src="/img/chris-pezza.JPG"
               alt="Christopher Pezza Headshot"
               layout="fill"
             />
           </div>
         </div>
         <div className="col-span-2">
-          <h2 className="text-xl font-semibold text-gray-50 tracking-wide uppercase">About Me</h2>
+          <h2 className="text-xl font-semibold text-slate-50 tracking-wide uppercase">About Me</h2>
           <p className="text-base text-white mt-4">
             I am a Master Delivery Consultant for nCino, Inc, a software company based in
             Wilmington, NC. Going on 7 years now, I have moved up from an entry position of Support
@@ -27,7 +26,7 @@ export default function About() {
           </p>
           <div className="flex flex-inline mt-8">
             <div>
-              <h2 className="text-xl font-semibold text-gray-50 tracking-wide uppercase">
+              <h2 className="text-xl font-semibold text-slate-50 tracking-wide uppercase">
                 Contact
               </h2>
               <span className="block text-white mt-4">Christopher Pezza</span>

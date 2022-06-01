@@ -1,10 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import navigation from '@/data/navigation'
-import family from '@/img/Family.JPG'
-import logo from '@/img/logo/Logo_Black.png'
 
 export default function Hero() {
   return (
@@ -36,13 +35,13 @@ export default function Hero() {
                             <span className="sr-only">Christopher Pezza</span>
                             <img
                               className="h-8 w-auto sm:h-10"
-                              src={logo}
+                              src="/img/logo/Logo_Black.png"
                               alt="Christopher Pezza Logo"
                             />
                           </a>
                         </Link>
                         <div className="-mr-2 flex items-center md:hidden">
-                          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                             <span className="sr-only">Open main menu</span>
                             <MenuIcon className="h-6 w-6" aria-hidden="true" />
                           </Popover.Button>
@@ -52,7 +51,7 @@ export default function Hero() {
                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                       {navigation.map((item) => (
                         <Link key={item.name} href={item.href}>
-                          <a className="font-medium text-gray-500 hover:text-gray-900">
+                          <a className="font-medium text-slate-500 hover:text-slate-900">
                             {item.name}
                           </a>
                         </Link>
@@ -79,10 +78,14 @@ export default function Hero() {
                     <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                       <div className="px-5 pt-4 flex items-center justify-between">
                         <div>
-                          <img className="h-8 w-auto" src={logo} alt="Christopher Pezza Logo" />
+                          <img
+                            className="h-8 w-auto"
+                            src="/img/logo/Logo_Black.png"
+                            alt="Christopher Pezza Logo"
+                          />
                         </div>
                         <div className="-mr-2">
-                          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                          <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                             <span className="sr-only">Close main menu</span>
                             <XIcon className="h-6 w-6" aria-hidden="true" />
                           </Popover.Button>
@@ -91,7 +94,7 @@ export default function Hero() {
                       <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
                           <Link key={item.name} href={item.href}>
-                            <a className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">
+                            <a className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50">
                               {item.name}
                             </a>
                           </Link>
@@ -106,11 +109,11 @@ export default function Hero() {
 
           <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="xl:inline">Hi, I'm</span>{' '}
+              <h1 className="text-4xl tracking-tight font-extrabold text-slate-900 sm:text-5xl md:text-6xl">
+                <span className="xl:inline">Hi, I&apos;m</span>{' '}
                 <span className="text-blue-600 xl:inline">Christopher</span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-slate-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 A developer, architect, streamer, content creator, husband, and father. The persona
                 link will take you to my streamer/content creator website to see more about me and
                 How To Guides for some of my projects.
@@ -139,7 +142,7 @@ export default function Hero() {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           className="h-56 w-full sm:h-72 md:h-96 lg:h-full object-cover"
-          src={family}
+          src="/img/Family.JPG"
           alt="Chris Pezza Family"
         />
       </div>

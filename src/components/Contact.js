@@ -3,7 +3,7 @@ import Success from './Success'
 
 export default function Contact() {
   return (
-    <div className="bg-gray-100" id="contact">
+    <div className="bg-slate-100" id="contact">
       <Success />
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="relative bg-white shadow-xl">
@@ -121,7 +121,7 @@ export default function Contact() {
               <ul className="mt-8 flex space-x-12">
                 <li>
                   <a
-                    className="text-gray-200 hover:text-[#5865F2]"
+                    className="text-slate-200 hover:text-[#5865F2]"
                     href="https://discord.gg/fzXW3rW"
                   >
                     <span className="sr-only">Discord</span>
@@ -142,7 +142,7 @@ export default function Contact() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-200 hover:text-[#181717]"
+                    className="text-slate-200 hover:text-[#181717]"
                     href="https://github.com/chiefpansancolt"
                   >
                     <span className="sr-only">GitHub</span>
@@ -163,7 +163,7 @@ export default function Contact() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-200 hover:text-[#1DA1F2]"
+                    className="text-slate-200 hover:text-[#1DA1F2]"
                     href="https://twitter.com/chiefpansancolt"
                   >
                     <span className="sr-only">Twitter</span>
@@ -184,7 +184,7 @@ export default function Contact() {
                 </li>
                 <li>
                   <a
-                    className="text-gray-200 hover:text-[#0E76A8]"
+                    className="text-slate-200 hover:text-[#0E76A8]"
                     href="https://linkedin.com/in/pezzachristopher"
                   >
                     <span className="sr-only">LinkedIn</span>
@@ -197,7 +197,7 @@ export default function Contact() {
             </div>
 
             <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-              <h3 className="text-lg font-medium text-gray-900">Send me a message</h3>
+              <h3 className="text-lg font-medium text-slate-900">Send me a message</h3>
               <form
                 method="POST"
                 action="/?success=true"
@@ -213,7 +213,7 @@ export default function Contact() {
                   </label>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-900">
                     Name
                   </label>
                   <div className="mt-1">
@@ -222,29 +222,29 @@ export default function Contact() {
                       name="name"
                       id="name"
                       autoComplete="given-name"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="email" className="block text-sm font-medium text-slate-900">
                     Email
                   </label>
                   <div className="mt-1 relative rounded-md shadow-sm">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <MailIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+                      <MailIcon className="h-5 w-5 text-slate-400" aria-hidden="true" />
                     </div>
                     <input
                       id="email"
                       name="email"
                       type="email"
                       autoComplete="email"
-                      className="py-3 px-4 pl-10 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 pl-10 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-900">
+                  <label htmlFor="subject" className="block text-sm font-medium text-slate-900">
                     Subject
                   </label>
                   <div className="mt-1">
@@ -252,13 +252,13 @@ export default function Contact() {
                       type="text"
                       name="subject"
                       id="subject"
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
                     />
                   </div>
                 </div>
                 <div className="sm:col-span-2">
                   <div className="flex justify-between">
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-900">
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-900">
                       Message
                     </label>
                   </div>
@@ -267,7 +267,7 @@ export default function Contact() {
                       id="message"
                       name="message"
                       rows={4}
-                      className="py-3 px-4 block w-full shadow-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500 border-gray-300 rounded-md"
+                      className="py-3 px-4 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
                       defaultValue={''}
                     />
                   </div>
