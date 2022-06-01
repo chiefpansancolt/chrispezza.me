@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://chris-pezza.com" target="_blank">chris-pezza.com</a>
+  <a href="https://chrispezza.me" target="_blank">chrispezza.me</a>
 </h1>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5f252587-73c2-4962-bb77-64904617f77d/deploy-status)](https://app.netlify.com/sites/chris-pezza/deploys)

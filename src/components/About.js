@@ -30,8 +30,8 @@ export default function About() {
                 Contact
               </h2>
               <span className="block text-white mt-4">Christopher Pezza</span>
-              <a className="block text-white" href="mailto:contact@chris-pezza.com">
-                contact@chris-pezza.com
+              <a className="block text-white" href="mailto:contact@chrispezza.me">
+                contact@chrispezza.me
               </a>
             </div>
             <div className="ml-16">

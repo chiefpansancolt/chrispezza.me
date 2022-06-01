@@ -115,7 +115,7 @@ export default function Contact() {
                 </dt>
                 <dd className="flex text-base text-blue-50">
                   <MailIcon className="flex-shrink-0 w-6 h-6 text-blue-200" aria-hidden="true" />
-                  <span className="ml-3">contact@chris-pezza.com</span>
+                  <span className="ml-3">contact@chrispezza.me</span>
                 </dd>
               </dl>
               <ul className="mt-8 flex space-x-12">
