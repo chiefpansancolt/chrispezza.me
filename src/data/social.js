@@ -1,11 +1,5 @@
 const social = [
   {
-    name: 'eFuse',
-    href: 'https://efuse.gg/u/chiefpansancolt',
-    img: 'https://cdn.efuse.gg/uploads/static/global/efuseLogo.png',
-    icon: (props) => <></>,
-  },
-  {
     name: 'Facebook',
     href: 'https://facebook.com/chiefpansancolt',
     hover: 'hover:text-[#005FED]',
