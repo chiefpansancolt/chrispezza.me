@@ -19,7 +19,7 @@ export default function Example() {
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-center text-base text-slate-200">
-            &copy; 2020 Christopher Pezza, All rights reserved.
+            &copy; 2023 Christopher Pezza, All rights reserved.
           </p>
         </div>
       </div>
