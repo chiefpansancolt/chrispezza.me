@@ -20,10 +20,10 @@ const experiences = [
     start: 'February 2014',
     end: 'Present',
     first: false,
-    position: 'Master Delivery Consultant',
+    position: 'Senior Solutions Architect',
     positions: [
       {
-        name: 'Master Delivery Consultant',
+        name: 'Senior Solutions Architect',
         start: 'May 2020',
         end: 'Present',
         description: `
@@ -35,7 +35,7 @@ const experiences = [
         <span class="block">- Assist in future communication, training structure, etc. to establish a repeatable process for onboarding additional Enterprise Bank Implementation Consultants. Train on methodology including streamlining, simplification and automation of tasks</span>`,
       },
       {
-        name: 'Principal Technical Solutions Architect',
+        name: 'Solutions Architect',
         start: 'August 2016',
         end: 'May 2020',
         description: `
