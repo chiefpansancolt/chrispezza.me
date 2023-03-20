@@ -1,10 +1,8 @@
 import { MailIcon } from '@heroicons/react/outline'
-import Success from './Success'
 
 export default function Contact() {
   return (
     <div className="bg-slate-100" id="contact">
-      <Success />
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact me</h2>
