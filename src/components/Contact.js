@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact me</h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="grid">
             <div className="relative overflow-hidden py-10 px-6 bg-blue-700 sm:px-10 xl:p-12">
               <div className="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                 <svg
@@ -106,8 +106,7 @@ export default function Contact() {
               </div>
               <h3 className="text-lg font-medium text-white">Contact Information</h3>
               <p className="mt-6 text-base text-blue-50 max-w-3xl">
-                Feel free to reach out over any of the below links, socials or contact form to the
-                right.
+                Feel free to contact me over email with the email below or over DM's on any of the below socials.
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>
@@ -194,93 +193,6 @@ export default function Contact() {
                   </a>
                 </li>
               </ul>
-            </div>
-
-            <div className="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-              <h3 className="text-lg font-medium text-slate-900">Send me a message</h3>
-              <form
-                method="POST"
-                action="/?success=true"
-                className="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8"
-                name="contact"
-                data-netlify-honeypot="bot-field"
-                data-netlify="true"
-              >
-                <input type="hidden" name="form-name" value="contact" />
-                <div className="hidden">
-                  <label>
-                    Don’t fill this out if you’re human: <input name="bot-field" />
-                  </label>
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-900">
-                    Name
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      autoComplete="given-name"
-                      className="py-3 px-4 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="email" className="block text-sm font-medium text-slate-900">
-                    Email
-                  </label>
-                  <div className="mt-1 relative rounded-md shadow-sm">
-                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                      <MailIcon className="h-5 w-5 text-slate-400" aria-hidden="true" />
-                    </div>
-                    <input
-                      id="email"
-                      name="email"
-                      type="email"
-                      autoComplete="email"
-                      className="py-3 px-4 pl-10 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <label htmlFor="subject" className="block text-sm font-medium text-slate-900">
-                    Subject
-                  </label>
-                  <div className="mt-1">
-                    <input
-                      type="text"
-                      name="subject"
-                      id="subject"
-                      className="py-3 px-4 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2">
-                  <div className="flex justify-between">
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-900">
-                      Message
-                    </label>
-                  </div>
-                  <div className="mt-1">
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={4}
-                      className="py-3 px-4 block w-full shadow-sm text-slate-900 focus:ring-blue-500 focus:border-blue-500 border-slate-300 rounded-md"
-                      defaultValue={''}
-                    />
-                  </div>
-                </div>
-                <div className="sm:col-span-2 sm:flex sm:justify-end">
-                  <button
-                    type="submit"
-                    className="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
             </div>
           </div>
         </div>
