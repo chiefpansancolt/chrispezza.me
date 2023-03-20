@@ -31,14 +31,12 @@ export default function Hero() {
                     <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                       <div className="flex items-center justify-between w-full md:w-auto">
                         <Link href="/">
-                          <a>
-                            <span className="sr-only">Christopher Pezza</span>
-                            <img
-                              className="h-8 w-auto sm:h-10"
-                              src="/img/logo/Logo_Black.png"
-                              alt="Christopher Pezza Logo"
-                            />
-                          </a>
+                          <span className="sr-only">Christopher Pezza</span>
+                          <img
+                            className="h-8 w-auto sm:h-10"
+                            src="/img/logo/Logo_Black.png"
+                            alt="Christopher Pezza Logo"
+                          />
                         </Link>
                         <div className="-mr-2 flex items-center md:hidden">
                           <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-slate-400 hover:text-slate-500 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -50,10 +48,12 @@ export default function Hero() {
                     </div>
                     <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                       {navigation.map((item) => (
-                        <Link key={item.name} href={item.href}>
-                          <a className="font-medium text-slate-500 hover:text-slate-900">
-                            {item.name}
-                          </a>
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="font-medium text-slate-500 hover:text-slate-900"
+                        >
+                          {item.name}
                         </Link>
                       ))}
                     </div>
@@ -93,10 +93,12 @@ export default function Hero() {
                       </div>
                       <div className="px-2 pt-2 pb-3 space-y-1">
                         {navigation.map((item) => (
-                          <Link key={item.name} href={item.href}>
-                            <a className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50">
-                              {item.name}
-                            </a>
+                          <Link
+                            key={item.name}
+                            href={item.href}
+                            className="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50"
+                          >
+                            {item.name}
                           </Link>
                         ))}
                       </div>
@@ -128,10 +130,11 @@ export default function Hero() {
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <Link href="#contact">
-                    <a className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
-                      Contact
-                    </a>
+                  <Link
+                    href="#contact"
+                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-700 bg-blue-100 hover:bg-blue-200 md:py-4 md:text-lg md:px-10"
+                  >
+                    Contact
                   </Link>
                 </div>
               </div>
