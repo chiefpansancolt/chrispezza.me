@@ -11,7 +11,8 @@ export default function About() {
               className="mr-8 inline-block rounded-full"
               src="/img/chris-pezza.JPG"
               alt="Christopher Pezza Headshot"
-              fill />
+              fill
+            />
           </div>
         </div>
         <div className="col-span-2">
@@ -46,5 +47,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  );
+  )
 }

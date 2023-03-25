@@ -21,7 +21,8 @@ export default function Portfolio() {
                   alt={project.title}
                   className="pointer-events-none object-cover group-hover:opacity-75"
                   fill
-                  sizes="100vw" />
+                  sizes="100vw"
+                />
                 <button
                   type="button"
                   className="absolute inset-0 focus:outline-none"
@@ -117,5 +118,5 @@ export default function Portfolio() {
         </Transition.Root>
       </div>
     </div>
-  );
+  )
 }

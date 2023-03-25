@@ -6,6 +6,6 @@ module.exports = {
   },
   images: {
     loader: "custom",
-    loaderFile: "./akamai-loader.js"
+    loaderFile: "./akamai-loader.js",
   },
 }
