@@ -104,8 +104,8 @@ export default function Contact() {
               </div>
               <h3 className="text-lg font-medium text-white">Contact Information</h3>
               <p className="mt-6 max-w-3xl text-base text-blue-50">
-                Feel free to contact me over email with the email below or over DM&apos;s on any of the
-                below socials.
+                Feel free to contact me over email with the email below or over DM&apos;s on any of
+                the below socials.
               </p>
               <dl className="mt-8 space-y-6">
                 <dt>
