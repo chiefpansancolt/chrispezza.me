@@ -5,8 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier './**/*.{css,js,json,yml,md}' --list-different",
-    "format:fix": "prettier './**/*.{css,js,json,yml,md}' --write",
+    "format": "prettier './**/*.{css,js,json,yml,md}' -l",
+    "format:fix": "prettier './**/*.{css,js,json,yml,md}' -w",
     "lint": "next lint"
   },
   "dependencies": {
@@ -29,7 +29,10 @@
     "typescript": "4.7.2"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "eslint": "^8.16.0",
-    "eslint-config-next": "12.1.6"
+    "eslint-config-next": "12.1.6",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5"
   }
 }
