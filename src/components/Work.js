@@ -8,13 +8,13 @@ export default function Work() {
   return (
     <div className="bg-white">
       <div
-        className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 divide-y divide-slate-200"
+        className="mx-auto max-w-7xl divide-y divide-slate-200 py-16 px-4 sm:px-6 lg:py-24 lg:px-8"
         id="education"
       >
-        <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pb-8">
-          <div className="flex justify-center mb-10 lg:mb-0">
+        <div className="pb-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+          <div className="mb-10 flex justify-center lg:mb-0">
             <h4 className="text-xl">
-              <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
+              <span className="border-b-4 border-solid border-blue-500 font-bold uppercase tracking-widest">
                 Education
               </span>
             </h4>
@@ -25,7 +25,7 @@ export default function Work() {
                 <h3 className={`${education.first ? '-mt-4' : 'pt-4'} text-3xl font-bold`}>
                   {education.name}
                 </h3>
-                <div className="block text-lg pt-4">
+                <div className="block pt-4 text-lg">
                   <span className="italic">
                     {education.degree}
                     {' in '}
@@ -38,10 +38,10 @@ export default function Work() {
             ))}
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pt-16" id="work">
-          <div className="flex justify-center mb-10 lg:mb-0">
+        <div className="pt-16 lg:grid lg:grid-cols-3 lg:gap-x-8" id="work">
+          <div className="mb-10 flex justify-center lg:mb-0">
             <h4 className="text-xl">
-              <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
+              <span className="border-b-4 border-solid border-blue-500 font-bold uppercase tracking-widest">
                 Work
               </span>
             </h4>
@@ -52,7 +52,7 @@ export default function Work() {
                 <h3 className={`${experience.first ? '-mt-4' : 'pt-5'} text-3xl font-bold`}>
                   {experience.company}
                 </h3>
-                <div className="block text-lg pt-4">
+                <div className="block pt-4 text-lg">
                   <span className="italic">{experience.position}</span>
                   {' • '}
                   <em>
@@ -75,12 +75,12 @@ export default function Work() {
                             ) : null}
                             <div className="relative flex space-x-3">
                               <div>
-                                <span className="h-2 w-2 rounded-full flex items-center justify-center ring-8 ring-white bg-slate-400" />
+                                <span className="flex h-2 w-2 items-center justify-center rounded-full bg-slate-400 ring-8 ring-white" />
                               </div>
-                              <div className="min-w-0 flex-1 flex justify-between space-x-4 -mt-3 pl-4">
+                              <div className="-mt-3 flex min-w-0 flex-1 justify-between space-x-4 pl-4">
                                 <div>
                                   <h5 className="text-lg font-bold">{position.name}</h5>
-                                  <p className="italic pt-2">
+                                  <p className="pt-2 italic">
                                     {position.start}
                                     {' - '}
                                     {position.end}
@@ -101,10 +101,10 @@ export default function Work() {
             ))}
           </div>
         </div>
-        <div className="lg:grid lg:grid-cols-3 lg:gap-x-8 pt-16" id="skills">
-          <div className="flex justify-center mb-10 lg:mb-0">
+        <div className="pt-16 lg:grid lg:grid-cols-3 lg:gap-x-8" id="skills">
+          <div className="mb-10 flex justify-center lg:mb-0">
             <h4 className="text-xl">
-              <span className="border-solid border-b-4 border-blue-500 uppercase tracking-widest font-bold">
+              <span className="border-b-4 border-solid border-blue-500 font-bold uppercase tracking-widest">
                 Skills
               </span>
             </h4>
@@ -116,27 +116,27 @@ export default function Work() {
             <div className="block pt-4">
               {skills.map((skill) => (
                 <div className="relative pt-1" key={skill.name}>
-                  <div className="flex mb-2 items-center justify-between">
+                  <div className="mb-2 flex items-center justify-between">
                     <div>
-                      <span className="text-xs font-semibold inline-block py-1 uppercase">
+                      <span className="inline-block py-1 text-xs font-semibold uppercase">
                         {skill.name}
                       </span>
                     </div>
                   </div>
-                  <div className="overflow-hidden h-4 mb-4 text-xs flex rounded bg-blue-200 w-11/12">
+                  <div className="mb-4 flex h-4 w-11/12 overflow-hidden rounded bg-blue-200 text-xs">
                     <div
-                      className={`shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500 ${skill.class}`}
+                      className={`flex flex-col justify-center whitespace-nowrap bg-blue-500 text-center text-white shadow-none ${skill.class}`}
                     />
                   </div>
                 </div>
               ))}
             </div>
-            <div className="pt-4 w-11/12">
+            <div className="w-11/12 pt-4">
               {resources.map((resource) => (
                 <span
                   key={resource.name}
                   className={`
-                  inline-flex items-center ml-2 mt-2 px-3 py-0.5 rounded-full text-sm font-medium
+                  ml-2 mt-2 inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium
                   ${
                     resource.type === 'Software'
                       ? 'bg-red-100 text-red-800'
