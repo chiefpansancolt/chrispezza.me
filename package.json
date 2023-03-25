@@ -6,6 +6,7 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier './**/*.{css,js,json,yml,md}' -l",
+    "format:check": "prettier './**/*.{css,js,json,yml,md}' -c",
     "format:fix": "prettier './**/*.{css,js,json,yml,md}' -w",
     "lint": "next lint"
   },
