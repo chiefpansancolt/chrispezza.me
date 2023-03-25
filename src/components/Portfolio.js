@@ -1,25 +1,25 @@
-import Image from 'next/image'
-import projects from '@/data/projects'
-import { Fragment, useState } from 'react'
-import ReactHtmlParser from 'react-html-parser'
-import { Dialog, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
+import projects from "@/data/projects"
+import { Dialog, Transition } from "@headlessui/react"
+import { XIcon } from "@heroicons/react/outline"
+import Image from "next/image"
+import { Fragment, useState } from "react"
+import ReactHtmlParser from "react-html-parser"
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false)
-  const [view, setView] = useState('')
+  const [view, setView] = useState("")
 
   return (
     <div className="bg-blue-600" id="portfolio">
-      <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
           {projects.map((project) => (
             <li key={project.id} className="relative">
-              <div className="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-orange-100 focus-within:ring-orange-500 overflow-hidden">
+              <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 focus-within:ring-offset-orange-100">
                 <Image
                   src={project.source}
                   alt={project.title}
-                  className="object-cover pointer-events-none group-hover:opacity-75"
+                  className="pointer-events-none object-cover group-hover:opacity-75"
                   layout="fill"
                 />
                 <button
@@ -33,10 +33,10 @@ export default function Portfolio() {
                   <span className="sr-only">View details for {project.title}</span>
                 </button>
               </div>
-              <p className="mt-2 block text-sm font-medium text-slate-50 truncate pointer-events-none">
+              <p className="pointer-events-none mt-2 block truncate text-sm font-medium text-slate-50">
                 {project.title}
               </p>
-              <p className="block text-sm font-medium text-slate-300 pointer-events-none">
+              <p className="pointer-events-none block text-sm font-medium text-slate-300">
                 {project.type}
               </p>
             </li>
@@ -46,11 +46,11 @@ export default function Portfolio() {
           <Dialog
             as="div"
             static
-            className="fixed z-10 inset-0 overflow-y-auto"
+            className="fixed inset-0 z-10 overflow-y-auto"
             open={open}
             onClose={setOpen}
           >
-            <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div className="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -63,7 +63,7 @@ export default function Portfolio() {
                 <Dialog.Overlay className="fixed inset-0 bg-slate-500 bg-opacity-75 transition-opacity" />
               </Transition.Child>
               <span
-                className="hidden sm:inline-block sm:align-middle sm:h-screen"
+                className="hidden sm:inline-block sm:h-screen sm:align-middle"
                 aria-hidden="true"
               >
                 &#8203;
@@ -77,11 +77,11 @@ export default function Portfolio() {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-3xl sm:w-full">
+                <div className="inline-block transform overflow-hidden rounded-lg bg-white text-left align-bottom shadow-xl transition-all sm:w-full sm:max-w-3xl sm:align-middle">
                   <div className="absolute top-0 right-0 pt-4 pr-4">
                     <button
                       type="button"
-                      className="bg-white rounded-md text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                      className="rounded-md bg-white text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                       onClick={() => setOpen(false)}
                     >
                       <span className="sr-only">Close</span>
@@ -92,16 +92,16 @@ export default function Portfolio() {
                     <div className="text-center sm:text-left">
                       <Dialog.Title
                         as="h3"
-                        className="text-lg leading-6 font-medium text-slate-900 mt-4 ml-4"
+                        className="mt-4 ml-4 text-lg font-medium leading-6 text-slate-900"
                       >
                         Project Details
                       </Dialog.Title>
                       <div className="mt-2">
-                        <Dialog.Description as="div" className="text-sm text-slate-500 text-left">
+                        <Dialog.Description as="div" className="text-left text-sm text-slate-500">
                           {projects.map((project) => (
                             <div
                               key={`${project.id}-details`}
-                              className={`${view === project.id ? '' : 'hidden'}`}
+                              className={`${view === project.id ? "" : "hidden"}`}
                             >
                               {ReactHtmlParser(project.description)}
                             </div>
