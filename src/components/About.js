@@ -1,4 +1,4 @@
-import { DownloadIcon } from "@heroicons/react/solid"
+import { ArrowDownTrayIcon } from "@heroicons/react/24/solid"
 import Image from "next/image"
 
 export default function About() {
@@ -11,8 +11,7 @@ export default function About() {
               className="mr-8 inline-block rounded-full"
               src="/img/chris-pezza.JPG"
               alt="Christopher Pezza Headshot"
-              fill
-            />
+              fill />
           </div>
         </div>
         <div className="col-span-2">
@@ -39,7 +38,7 @@ export default function About() {
                 href="https://www.linkedin.com/in/pezzachristopher"
                 className="mt-4 inline-flex items-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-lg hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2"
               >
-                <DownloadIcon className="-ml-0.5 mr-2 h-4 w-4" aria-hidden="true" />
+                <ArrowDownTrayIcon className="-ml-0.5 mr-2 h-4 w-4" aria-hidden="true" />
                 Download Resume
               </a>
             </div>
@@ -47,5 +46,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }

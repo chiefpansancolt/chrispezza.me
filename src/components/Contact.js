@@ -1,4 +1,4 @@
-import { MailIcon } from "@heroicons/react/outline"
+import { EnvelopeIcon } from "@heroicons/react/24/outline"
 
 export default function Contact() {
   return (
@@ -112,7 +112,7 @@ export default function Contact() {
                   <span className="sr-only">Email</span>
                 </dt>
                 <dd className="flex text-base text-blue-50">
-                  <MailIcon className="h-6 w-6 flex-shrink-0 text-blue-200" aria-hidden="true" />
+                  <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-blue-200" aria-hidden="true" />
                   <span className="ml-3">contact@chrispezza.me</span>
                 </dd>
               </dl>

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import navigation from "@/data/navigation"
 import { Popover, Transition } from "@headlessui/react"
-import { MenuIcon, XIcon } from "@heroicons/react/outline"
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
 import { Fragment } from "react"
 
@@ -41,7 +41,7 @@ export default function Hero() {
                         <div className="-mr-2 flex items-center md:hidden">
                           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                             <span className="sr-only">Open main menu</span>
-                            <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                           </Popover.Button>
                         </div>
                       </div>
@@ -87,7 +87,7 @@ export default function Hero() {
                         <div className="-mr-2">
                           <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-slate-400 hover:bg-slate-100 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                             <span className="sr-only">Close main menu</span>
-                            <XIcon className="h-6 w-6" aria-hidden="true" />
+                            <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                           </Popover.Button>
                         </div>
                       </div>
