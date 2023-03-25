@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier 'src/{pages,components,data,styles}/**/*.{css,js,mdx}' --write",
+    "format": "prettier './**/*.{css,js,json,yml,md}' --list-different",
+    "format:fix": "prettier './**/*.{css,js,json,yml,md}' --write",
     "lint": "next lint"
   },
   "dependencies": {
