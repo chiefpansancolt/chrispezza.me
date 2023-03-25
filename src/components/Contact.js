@@ -1,4 +1,4 @@
-import { MailIcon } from '@heroicons/react/outline'
+import { MailIcon } from "@heroicons/react/outline"
 
 export default function Contact() {
   return (

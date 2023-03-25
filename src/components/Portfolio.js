@@ -1,13 +1,13 @@
-import Image from 'next/image'
-import projects from '@/data/projects'
-import { Fragment, useState } from 'react'
-import ReactHtmlParser from 'react-html-parser'
-import { Dialog, Transition } from '@headlessui/react'
-import { XIcon } from '@heroicons/react/outline'
+import projects from "@/data/projects"
+import { Dialog, Transition } from "@headlessui/react"
+import { XIcon } from "@heroicons/react/outline"
+import Image from "next/image"
+import { Fragment, useState } from "react"
+import ReactHtmlParser from "react-html-parser"
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false)
-  const [view, setView] = useState('')
+  const [view, setView] = useState("")
 
   return (
     <div className="bg-blue-600" id="portfolio">
@@ -101,7 +101,7 @@ export default function Portfolio() {
                           {projects.map((project) => (
                             <div
                               key={`${project.id}-details`}
-                              className={`${view === project.id ? '' : 'hidden'}`}
+                              className={`${view === project.id ? "" : "hidden"}`}
                             >
                               {ReactHtmlParser(project.description)}
                             </div>

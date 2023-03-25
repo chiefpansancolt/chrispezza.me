@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link'
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import navigation from '@/data/navigation'
+import navigation from "@/data/navigation"
+import { Popover, Transition } from "@headlessui/react"
+import { MenuIcon, XIcon } from "@heroicons/react/outline"
+import Link from "next/link"
+import { Fragment } from "react"
 
 export default function Hero() {
   return (
@@ -112,7 +112,7 @@ export default function Hero() {
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-                <span className="xl:inline">Hi, I&apos;m</span>{' '}
+                <span className="xl:inline">Hi, I&apos;m</span>{" "}
                 <span className="text-blue-600 xl:inline">Christopher</span>
               </h1>
               <p className="mt-3 text-base text-slate-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">

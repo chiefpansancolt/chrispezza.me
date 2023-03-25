@@ -1,11 +1,11 @@
-import Head from 'next/head'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Work from '@/components/Work'
-import Portfolio from '@/components/Portfolio'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer'
-import Certifications from '@/components/Certifications'
+import About from "@/components/About"
+import Certifications from "@/components/Certifications"
+import Contact from "@/components/Contact"
+import Footer from "@/components/Footer"
+import Hero from "@/components/Hero"
+import Portfolio from "@/components/Portfolio"
+import Work from "@/components/Work"
+import Head from "next/head"
 
 export default function Home() {
   return (

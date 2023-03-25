@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
-import salesforceCertifications from '@/data/salesforce_certifications'
-import Link from 'next/link'
+import salesforceCertifications from "@/data/salesforce_certifications"
+import Link from "next/link"
 
 export default function Certifications() {
   return (

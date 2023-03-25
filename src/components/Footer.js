@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import social from '@/data/social'
+import social from "@/data/social"
 
 export default function Example() {
   return (

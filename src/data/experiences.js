@@ -1,9 +1,9 @@
 const experiences = [
   {
-    company: 'Chiefpansancolt',
-    start: 'October 2019',
-    end: 'Present',
-    position: 'Streamer/Content Creator',
+    company: "Chiefpansancolt",
+    start: "October 2019",
+    end: "Present",
+    position: "Streamer/Content Creator",
     first: true,
     positions: [],
     description: `
@@ -16,16 +16,16 @@ const experiences = [
       <span class="block">- Creation of Video capture overlays.</span>`,
   },
   {
-    company: 'nCino, Inc.',
-    start: 'February 2014',
-    end: 'Present',
+    company: "nCino, Inc.",
+    start: "February 2014",
+    end: "Present",
     first: false,
-    position: 'Senior Solutions Architect',
+    position: "Senior Solutions Architect",
     positions: [
       {
-        name: 'Senior Solutions Architect',
-        start: 'May 2020',
-        end: 'Present',
+        name: "Senior Solutions Architect",
+        start: "May 2020",
+        end: "Present",
         description: `
         <span class="block">- Provide subject matter expertise to Design and Develop solutions based on customer requirements and aligned with nCino Gold Standards</span>
         <span class="block">- Communicate to technical, business and executive customer stakeholders to set appropriate expectations related to customer commitment and requisite resource allocation for a successful deployment and confirm schedule</span>
@@ -35,9 +35,9 @@ const experiences = [
         <span class="block">- Assist in future communication, training structure, etc. to establish a repeatable process for onboarding additional Enterprise Bank Implementation Consultants. Train on methodology including streamlining, simplification and automation of tasks</span>`,
       },
       {
-        name: 'Solutions Architect',
-        start: 'August 2016',
-        end: 'May 2020',
+        name: "Solutions Architect",
+        start: "August 2016",
+        end: "May 2020",
         description: `
         <span class="block">As a Technical Solution Architect my role is to help facilitate the implementation of a Enterprise Client with the backing of a SI partner and guiding the Bank with nCino Best Practices for how to use the system.</span>
         <span class="block">Other responsibilities include:</span>
@@ -47,9 +47,9 @@ const experiences = [
         <span class="block">- Build Accelerators to enhance a feature or increase efficiency in the implementation of nCino.</span>`,
       },
       {
-        name: 'Implementation Consultant',
-        start: 'January  2015',
-        end: 'August 2016',
+        name: "Implementation Consultant",
+        start: "January  2015",
+        end: "August 2016",
         description: `
         <span class="block">Salesforce.com Implementation Consultant works in tandem with Project Manager and Business Analyst while implementing the nCino solution on the Salesforce.com platform
         Lead and/or contribute to all technical aspects of implementation projects Perform detailed analysis of technical requirements during sales cycle
@@ -65,9 +65,9 @@ const experiences = [
         <span class="block">- Small or large projects related to current or current implementation of clients for projects that require more detail and construction of a unique process or application.</span>`,
       },
       {
-        name: 'Support Engineer',
-        start: 'May 2014',
-        end: 'January 2015',
+        name: "Support Engineer",
+        start: "May 2014",
+        end: "January 2015",
         description: `
         <span class="block">Maintain a Customer Based Relationship while helping customer maintain a clean and functioning software package on the Salesforce Platform.</span>
         <span class="block">Custom Code Visual Force Pages with Controllers.</span>
@@ -75,9 +75,9 @@ const experiences = [
         <span class="block">Configure and Customize the Salesforce platform.</span>`,
       },
       {
-        name: 'Customer Success - Intern',
-        start: 'February 2014',
-        end: 'May 2014',
+        name: "Customer Success - Intern",
+        start: "February 2014",
+        end: "May 2014",
         description: `
         <span class="block">- Training material preparation and manual updates pre-training.</span>
         <span class="block">- Pre-rollout Org QA/testing using test scripts to get fresh eyes on an org before rolling it out to a customer.</span>

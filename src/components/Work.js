@@ -1,8 +1,8 @@
-import ReactHtmlParser from 'react-html-parser'
-import educations from '@/data/educations'
-import experiences from '@/data/experiences'
-import skills from '@/data/skills'
-import resources from '@/data/resources'
+import educations from "@/data/educations"
+import experiences from "@/data/experiences"
+import resources from "@/data/resources"
+import skills from "@/data/skills"
+import ReactHtmlParser from "react-html-parser"
 
 export default function Work() {
   return (
@@ -22,16 +22,16 @@ export default function Work() {
           <div className="col-span-2">
             {educations.map((education) => (
               <div key={education.id}>
-                <h3 className={`${education.first ? '-mt-4' : 'pt-4'} text-3xl font-bold`}>
+                <h3 className={`${education.first ? "-mt-4" : "pt-4"} text-3xl font-bold`}>
                   {education.name}
                 </h3>
                 <div className="block pt-4 text-lg">
                   <span className="italic">
                     {education.degree}
-                    {' in '}
+                    {" in "}
                     {education.area}
                   </span>
-                  {' • '}
+                  {" • "}
                   <em>{education.graduation}</em>
                 </div>
               </div>
@@ -49,15 +49,15 @@ export default function Work() {
           <div className="col-span-2">
             {experiences.map((experience) => (
               <div key={experience.company}>
-                <h3 className={`${experience.first ? '-mt-4' : 'pt-5'} text-3xl font-bold`}>
+                <h3 className={`${experience.first ? "-mt-4" : "pt-5"} text-3xl font-bold`}>
                   {experience.company}
                 </h3>
                 <div className="block pt-4 text-lg">
                   <span className="italic">{experience.position}</span>
-                  {' • '}
+                  {" • "}
                   <em>
                     {experience.start}
-                    {' - '}
+                    {" - "}
                     {experience.end}
                   </em>
                 </div>
@@ -82,7 +82,7 @@ export default function Work() {
                                   <h5 className="text-lg font-bold">{position.name}</h5>
                                   <p className="pt-2 italic">
                                     {position.start}
-                                    {' - '}
+                                    {" - "}
                                     {position.end}
                                   </p>
                                   <p className="pt-2">{ReactHtmlParser(position.description)}</p>
@@ -138,11 +138,11 @@ export default function Work() {
                   className={`
                   ml-2 mt-2 inline-flex items-center rounded-full px-3 py-0.5 text-sm font-medium
                   ${
-                    resource.type === 'Software'
-                      ? 'bg-red-100 text-red-800'
-                      : resource.type === 'Programs'
-                      ? 'bg-purple-100 text-purple-800'
-                      : 'bg-blue-100 text-blue-800'
+                    resource.type === "Software"
+                      ? "bg-red-100 text-red-800"
+                      : resource.type === "Programs"
+                      ? "bg-purple-100 text-purple-800"
+                      : "bg-blue-100 text-blue-800"
                   }`}
                 >
                   {resource.name}
