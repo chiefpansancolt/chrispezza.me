@@ -5,6 +5,7 @@
 [![GitHub Workflow Deploy Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chris-pezza.com/deploy.yml?label=Deploy&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chris-pezza.com/actions/workflows/deploy.yml)
 [![GitHub Workflow Build Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chris-pezza.com/build.yml?label=Build&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chris-pezza.com/actions/workflows/build.yml)
 [![GitHub Workflow Lints Status](https://img.shields.io/github/actions/workflow/status/chiefpansancolt/chris-pezza.com/lints.yml?label=Lints&logo=github&style=flat-square)](https://github.com/chiefpansancolt/chris-pezza.com/actions/workflows/lints.yml)
+[![CodeQL](https://github.com/chiefpansancolt/chris-pezza.com/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/chiefpansancolt/chris-pezza.com/actions/workflows/github-code-scanning/codeql)
 
 > My website, created with Next.js, TailwindCSS, and TailwindUI
 
