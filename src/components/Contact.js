@@ -1,14 +1,14 @@
-import { EnvelopeIcon } from "@heroicons/react/24/outline"
+import { EnvelopeIcon } from '@heroicons/react/24/outline'
 
 export default function Contact() {
   return (
     <div className="bg-slate-100" id="contact">
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="relative bg-white shadow-xl">
           <h2 className="sr-only">Contact me</h2>
 
           <div className="grid">
-            <div className="relative overflow-hidden bg-blue-700 py-10 px-6 sm:px-10 xl:p-12">
+            <div className="relative overflow-hidden bg-blue-700 px-6 py-10 sm:px-10 xl:p-12">
               <div className="pointer-events-none absolute inset-0 sm:hidden" aria-hidden="true">
                 <svg
                   className="absolute inset-0 h-full w-full"
@@ -39,7 +39,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div
-                className="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 sm:block lg:hidden"
+                className="pointer-events-none absolute bottom-0 right-0 top-0 hidden w-1/2 sm:block lg:hidden"
                 aria-hidden="true"
               >
                 <svg
@@ -71,7 +71,7 @@ export default function Contact() {
                 </svg>
               </div>
               <div
-                className="pointer-events-none absolute top-0 right-0 bottom-0 hidden w-1/2 lg:block"
+                className="pointer-events-none absolute bottom-0 right-0 top-0 hidden w-1/2 lg:block"
                 aria-hidden="true"
               >
                 <svg

@@ -1,10 +1,10 @@
-import { ArrowDownTrayIcon } from "@heroicons/react/24/solid"
-import Image from "next/image"
+import { ArrowDownTrayIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 export default function About() {
   return (
     <div className="bg-blue-600" id="about">
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:px-8 lg:py-24">
         <div className="mb-4 flex justify-center lg:mb-0 lg:justify-end">
           <div className="relative h-32 w-32">
             <Image

@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import social from "@/data/social"
+import social from '@/data/social'
 
 export default function Example() {
   return (
     <footer className="bg-blue-600">
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {social.map((item) => (
             <a key={item.name} href={item.href} className="text-slate-200">

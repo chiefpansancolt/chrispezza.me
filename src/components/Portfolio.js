@@ -1,21 +1,23 @@
-import projects from "@/data/projects"
-import { Dialog, Transition } from "@headlessui/react"
-import { XMarkIcon } from "@heroicons/react/24/outline"
-import Image from "next/image"
-import { Fragment, useState } from "react"
-import ReactHtmlParser from "react-html-parser"
+'use client'
+
+import projects from '@/data/projects'
+import { Dialog, Transition } from '@headlessui/react'
+import { XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
+import { Fragment, useState } from 'react'
+import ReactHtmlParser from 'react-html-parser'
 
 export default function Portfolio() {
   const [open, setOpen] = useState(false)
-  const [view, setView] = useState("")
+  const [view, setView] = useState('')
 
   return (
     <div className="bg-blue-600" id="portfolio">
-      <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <ul className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
           {projects.map((project) => (
             <li key={project.id} className="relative">
-              <div className="group aspect-w-10 aspect-h-7 block w-full overflow-hidden rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 focus-within:ring-offset-orange-100">
+              <div className="group aspect-h-7 aspect-w-10 block w-full overflow-hidden rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-orange-500 focus-within:ring-offset-2 focus-within:ring-offset-orange-100">
                 <Image
                   src={project.source}
                   alt={project.title}
@@ -51,7 +53,7 @@ export default function Portfolio() {
             open={open}
             onClose={setOpen}
           >
-            <div className="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+            <div className="flex min-h-screen items-end justify-center px-4 pb-20 pt-4 text-center sm:block sm:p-0">
               <Transition.Child
                 as={Fragment}
                 enter="ease-out duration-300"
@@ -79,7 +81,7 @@ export default function Portfolio() {
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
                 <div className="inline-block transform overflow-hidden rounded-lg bg-white text-left align-bottom shadow-xl transition-all sm:w-full sm:max-w-3xl sm:align-middle">
-                  <div className="absolute top-0 right-0 pt-4 pr-4">
+                  <div className="absolute right-0 top-0 pr-4 pt-4">
                     <button
                       type="button"
                       className="rounded-md bg-white text-slate-400 hover:text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
@@ -93,7 +95,7 @@ export default function Portfolio() {
                     <div className="text-center sm:text-left">
                       <Dialog.Title
                         as="h3"
-                        className="mt-4 ml-4 text-lg font-medium leading-6 text-slate-900"
+                        className="ml-4 mt-4 text-lg font-medium leading-6 text-slate-900"
                       >
                         Project Details
                       </Dialog.Title>
@@ -102,7 +104,7 @@ export default function Portfolio() {
                           {projects.map((project) => (
                             <div
                               key={`${project.id}-details`}
-                              className={`${view === project.id ? "" : "hidden"}`}
+                              className={`${view === project.id ? '' : 'hidden'}`}
                             >
                               {ReactHtmlParser(project.description)}
                             </div>

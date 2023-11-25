@@ -1,9 +1,11 @@
+'use client'
+
 /* eslint-disable @next/next/no-img-element */
-import navigation from "@/data/navigation"
-import { Popover, Transition } from "@headlessui/react"
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
-import Link from "next/link"
-import { Fragment } from "react"
+import navigation from '@/data/navigation'
+import { Popover, Transition } from '@headlessui/react'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
+import { Fragment } from 'react'
 
 export default function Hero() {
   return (
@@ -91,7 +93,7 @@ export default function Hero() {
                           </Popover.Button>
                         </div>
                       </div>
-                      <div className="space-y-1 px-2 pt-2 pb-3">
+                      <div className="space-y-1 px-2 pb-3 pt-2">
                         {navigation.map((item) => (
                           <Link
                             key={item.name}
@@ -112,7 +114,7 @@ export default function Hero() {
           <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
               <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-                <span className="xl:inline">Hi, I&apos;m</span>{" "}
+                <span className="xl:inline">Hi, I&apos;m</span>{' '}
                 <span className="text-blue-600 xl:inline">Christopher</span>
               </h1>
               <p className="mt-3 text-base text-slate-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
@@ -124,15 +126,15 @@ export default function Hero() {
                 <div className="rounded-md shadow">
                   <a
                     href="https://chiefpansancolt.live"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:px-10 md:py-4 md:text-lg"
                   >
                     Persona
                   </a>
                 </div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                <div className="mt-3 sm:ml-3 sm:mt-0">
                   <Link
                     href="#contact"
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-100 px-8 py-3 text-base font-medium text-blue-700 hover:bg-blue-200 md:py-4 md:px-10 md:text-lg"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-100 px-8 py-3 text-base font-medium text-blue-700 hover:bg-blue-200 md:px-10 md:py-4 md:text-lg"
                   >
                     Contact
                   </Link>

@@ -1,9 +1,9 @@
 const projects = [
   {
-    id: "1",
-    title: "Chiefpansancolt.live",
-    type: "Website",
-    source: "/img/projects/chiefpansancolt.live.png",
+    id: 'chiefpansancoltLive',
+    title: 'Chiefpansancolt.live',
+    type: 'Website',
+    source: '/img/projects/chiefpansancolt.live.png',
     description: `
       <img src="/img/projects/chiefpansancolt.live.png" alt="Chiefpansancolt Website" class="w-full"/>
       <div class="p-4 prose">
@@ -41,10 +41,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "2",
-    title: "Simplcov Tailwind",
-    type: "Ruby Gem",
-    source: "/img/projects/simplecov-tailwindcss.png",
+    id: 'simplecovTailwind',
+    title: 'Simplcov Tailwind',
+    type: 'Ruby Gem',
+    source: '/img/projects/simplecov-tailwindcss.png',
     description: `
       <img src="/img/projects/simplecov-tailwindcss.png" alt="Simplecov Tailwind View" class="w-full"/>
       <div class="p-4 prose">
@@ -79,10 +79,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "3",
-    title: "Simplecov Material",
-    type: "Ruby Gem",
-    source: "/img/projects/simplecov-material.png",
+    id: 'simplecovMaterial',
+    title: 'Simplecov Material',
+    type: 'Ruby Gem',
+    source: '/img/projects/simplecov-material.png',
     description: `
       <img src="/img/projects/simplecov-material.png" alt="Simplecov Materal View" class="w-full"/>
       <div class="p-4 prose">
@@ -112,10 +112,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "4",
-    title: "Package Builder",
-    type: "Salesforce Managed Package",
-    source: "/img/projects/Package-Builder.png",
+    id: 'packageBuilder',
+    title: 'Package Builder',
+    type: 'Salesforce Managed Package',
+    source: '/img/projects/Package-Builder.png',
     description: `
       <img src="/img/projects/Package-Builder.png" alt="Package Builder View" class="w-full"/>
       <div class="p-4 prose">
@@ -149,10 +149,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "5",
-    title: "Feature Migrator",
-    type: "Website (Deprecated)",
-    source: "/img/projects/Feature-Migrator.png",
+    id: 'featureMigrator',
+    title: 'Feature Migrator',
+    type: 'Website (Deprecated)',
+    source: '/img/projects/Feature-Migrator.png',
     description: `
       <img src="/img/projects/Feature-Migrator.png" alt="Feature Migrator View" class="w-full"/>
       <div class="p-4 prose">
@@ -189,10 +189,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "6",
-    title: "Salesforce Projects",
-    type: "Salesforce",
-    source: "/img/projects/salesforce.png",
+    id: 'salesforceProjects',
+    title: 'Salesforce Projects',
+    type: 'Salesforce',
+    source: '/img/projects/salesforce.png',
     description: `
       <img src="/img/projects/salesforce.png" alt="Salesforce Logo" class="w-full"/>
       <div>
@@ -386,10 +386,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "7",
-    title: "Ruby Gems Created",
-    type: "Ruby Gems",
-    source: "/img/projects/ruby-gems.png",
+    id: 'rubyGems',
+    title: 'Ruby Gems Created',
+    type: 'Ruby Gems',
+    source: '/img/projects/ruby-gems.png',
     description: `
       <img src="/img/projects/ruby-gems.png" alt="Ruby Gems Logo" class="w-full"/>
       <div>
@@ -481,10 +481,10 @@ const projects = [
       </div>`,
   },
   {
-    id: "8",
-    title: "GitHub Contributions",
-    type: "GitHub",
-    source: "/img/projects/github.png",
+    id: 'githubContributions',
+    title: 'GitHub Contributions',
+    type: 'GitHub',
+    source: '/img/projects/github.png',
     description: `
       <img src="/img/projects/github.png" alt="GitHub Logo" class="w-full"/>
       <div>
