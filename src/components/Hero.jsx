@@ -103,14 +103,14 @@ export default function Hero() {
                   <span className="text-blue-600 xl:inline">Christopher</span>
                 </h1>
                 <p className="mt-3 text-base text-slate-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-                  A developer, architect, streamer, content creator, husband, and father. The persona
-                  link will take you to my streamer/content creator website to see more about me and
+                  A developer, architect, gamer, husband, and father. The persona
+                  link will take you to my developer website to see more about me and
                   How To Guides for some of my projects.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <div className="rounded-md shadow">
                     <a
-                      href="https://chiefpansancolt.live"
+                      href="https://chiefpansancolt.dev"
                       className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-8 py-3 text-base font-medium text-white hover:bg-blue-700 md:px-10 md:py-4 md:text-lg"
                     >
                       Persona

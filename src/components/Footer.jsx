@@ -19,7 +19,7 @@ export default function Example() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-base text-slate-200">
-            &copy; 2023 Christopher Pezza, All rights reserved.
+            &copy; {new Date().getFullYear()} Christopher Pezza, All rights reserved.
           </p>
         </div>
       </div>

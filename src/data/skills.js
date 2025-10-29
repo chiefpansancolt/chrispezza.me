@@ -5,7 +5,7 @@ const skills = [
   { name: 'Apex', progress: 75, class: 'w-3/4' },
   { name: 'Lightning Web Component (SF)', progress: 75, class: 'w-3/4' },
   { name: 'Ruby', progress: 25, class: 'w-1/4' },
-  { name: 'Rubby on Rails', progress: 45, class: 'w-5/12' },
+  { name: 'Ruby on Rails', progress: 45, class: 'w-5/12' },
   { name: 'Salesforce', progress: 100, class: 'w-full' },
   { name: 'AngularJS', progress: 25, class: 'w-1/4' },
   { name: 'React', progress: 30, class: 'w-1/3' },
@@ -13,7 +13,7 @@ const skills = [
   { name: 'Markdown', progress: 100, class: 'w-full' },
   { name: 'Git', progress: 75, class: 'w-3/4' },
   { name: 'NextJS', progress: 45, class: 'w-5/12' },
-  { name: 'Bridgetown', progress: 75, class: 'w-3/4' },
+  { name: 'Typescript', progress: 50, class: 'w-1/2' },
   { name: 'PHP', progress: 25, class: 'w-1/4' },
 ]
 

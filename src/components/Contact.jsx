@@ -113,7 +113,7 @@ export default function Contact() {
                 </dt>
                 <dd className="flex text-base text-blue-50">
                   <EnvelopeIcon
-                    className="h-6 w-6 flex-shrink-0 text-blue-200"
+                    className="h-6 w-6 shrink-0 text-blue-200"
                     aria-hidden="true"
                   />
                   <span className="ml-3">contact@chrispezza.me</span>

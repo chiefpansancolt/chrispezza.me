@@ -1,42 +1,75 @@
 const projects = [
   {
-    id: 'chiefpansancoltLive',
-    title: 'Chiefpansancolt.live',
-    type: 'Website',
-    source: '/img/projects/chiefpansancolt.live.png',
+    id: 'todolistapp',
+    title: 'Todo List App',
+    type: 'Desktop Application',
+    source: '/img/projects/TodoList.png',
     description: `
-      <img src="/img/projects/chiefpansancolt.live.png" alt="Chiefpansancolt Website" class="w-full"/>
+      <img src="/img/projects/TodoList.png" alt="Todo List App View" class="w-full"/>
       <div class="p-4 prose">
         <p class="block">
-          This website was built to represent Chris's Persona of Chiefpansancolt online such as doucmentation
-          for various items built, Pop Collection, Blog Posts, and his Stream.
+          Today todo list trackers are either too barebones or too complicated. This app takes those two ends and finds a middle ground where you have flexibility with the combo of simple to help make managing tasks simple and easy again. Check out the page <a class="underline" href="https://todo-list.chiefpansancolt.dev">here</a>.
         </p>
-        <div class="block">
-          This website was built on the Bridgetown architecture and styled using Tailwind.
-          <ul>
-            <li>
-              <a href="https://www.bridgetownrb.com/">Bridgetown</a>
-            </li>
+        <div class="block pt-5">
+          This website was built on the Electron with NextJS and styled using Tailwind.
+          <ul class="list-disc list-inside">
             <li>
               <a href="https://tailwindcss.com/">Tailwind CSS</a>
             </li>
             <li>
-              <a href="https://stimulus.hotwire.dev/">Stimulus JS</a>
+              <a href="https://www.electronjs.org/">Electron JS</a>
+            </li>
+            <li>
+              <a href="https://nextjs.org/">Next JS</a>
             </li>
           </ul>
         </div>
-        <p class="block">
+        <p class="block pt-5">
           Some of the Languages/Programs used:
         </p>
-        <div class="space-x-1">
+        <div class="space-x-1 pt-2.5">
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">HTML</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">CSS</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">JavaScript</span>
-          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">Ruby</span>
-          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Stimulus</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">Typescript</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Electron</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">NextJS</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Tailwind</span>
-          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Bridgetown</span>
-          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-blue-100 text-blue-800">Netlify</span>
+        </div>
+      </div>`,
+  },
+  {
+    id: 'dinkumtracker',
+    title: 'Dinkum Tracker',
+    type: 'Website',
+    source: '/img/projects/Dinkum_Tracker_Overview.png',
+    description: `
+      <img src="/img/projects/Dinkum_Tracker_Overview.png" alt="Dinkum Tracker Overview" class="w-full"/>
+      <div class="p-4 prose">
+        <p class="block">
+          A comprehensive tracking application for your Dinkum adventures. Manage multiple playthroughs, track collections, and monitor progress all in one place - all saved locally in your browser. Check out the app <a class="underline" href="https://dinkum-tracker.app">here</a>.
+        </p>
+        <div class="block pt-5">
+          This website was built on NextJS and styled using Tailwind.
+          <ul class="list-disc list-inside">
+            <li>
+              <a href="https://tailwindcss.com/">Tailwind CSS</a>
+            </li>
+            <li>
+              <a href="https://nextjs.org/">Next JS</a>
+            </li>
+          </ul>
+        </div>
+        <p class="block pt-5">
+          Some of the Languages/Programs used:
+        </p>
+        <div class="space-x-1 pt-2.5">
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">HTML</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">CSS</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">JavaScript</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">Typescript</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">NextJS</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Tailwind</span>
         </div>
       </div>`,
   },
@@ -53,9 +86,9 @@ const projects = [
           Check out my article about the changes,
           <a href="https://dev.to/chiefpansancolt/ruby-testing-with-a-formatter-that-is-modernized-39ai">Ruby Testing with a Formatter that is modernized</a>
         </p>
-        <div class="block">
+        <div class="block pt-5">
           This website was built on the Ruby architecture and styled using Tailwind.
-          <ul>
+          <ul class="list-disc list-inside">
             <li>
               <a href="https://tailwindcss.com/">Tailwind CSS</a>
             </li>
@@ -64,10 +97,10 @@ const projects = [
             </li>
           </ul>
         </div>
-        <p class="block">
+        <p class="block pt-5">
           Some of the Languages/Programs used:
         </p>
-        <div class="space-x-1">
+        <div class="space-x-1 pt-2.5">
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">HTML</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">CSS</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">JavaScript</span>
@@ -91,15 +124,15 @@ const projects = [
           Check out my article about the changes,
           <a href="https://dev.to/chiefpansancolt/using-a-clean-formatter-for-ruby-testing-2khe">Using a Clean Formatter for Ruby Testing</a>
         </p>
-        <div class="block">
+        <div class="block pt-5">
           This website was built on the Ruby architecture and styled using Tailwind.
-          <ul>
+          <ul class="list-disc list-inside">
             <li>
               <a href="https://material.io/">Material Design</a>
             </li>
           </ul>
         </div>
-        <p class="block">
+        <p class="block pt-2.5">
           Some of the Languages/Programs used:
         </p>
         <div class="space-x-1">
@@ -108,6 +141,35 @@ const projects = [
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">JavaScript</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">Ruby</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Material Design</span>
+        </div>
+      </div>`,
+  },
+  {
+    id: 'sfautomationframework',
+    title: 'Salesforce Automation Framework',
+    type: 'Salesforce Code Framework',
+    source: '/img/projects/salesforce.png',
+    description: `
+      <img src="/img/projects/salesforce.png" alt="Salesforce Logo" class="w-full"/>
+      <div class="p-4 prose">
+        <p class="block">
+          This framework was built to give Salesforce Developers a robust framework to build upon when creating Trigger Handlers for any object. Checkout the documentation on my main site <a class="underline" href="https://sfautomationframework.chiefpansancolt.dev/">here</a>.
+        </p>
+        <div class="block pt-5">
+          This framework contains the following features:
+          <ul class="list-disc list-inside">
+            <li>Trigger Framework</li>
+            <li>Error Logger</li>
+            <li>Template Record Trigger Flow</li>
+            <li>Customer Permissions to Exclude Flow and Trigger</li>
+          </ul>
+        </div>
+        <p class="block pt-5">
+          Some of the Languages/Programs used:
+        </p>
+        <div class="space-x-1 pt-2.5">
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">Apex</span>
+          <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-green-100 text-green-800">Salesforce</span>
         </div>
       </div>`,
   },
@@ -121,11 +183,11 @@ const projects = [
       <div class="p-4 prose">
         <p class="block">
           This package was built to give an easy way to generate a CLI command or Package XML output for a given Metadata Type.
-          Check out the Documentation on my main site <a href="https://chiefpansancolt.live/documentation/package-builder">here</a>.
+          Check out the Documentation on my main site <a class="underline" href="https://package-builder.chiefpansancolt.dev/">here</a>.
         </p>
-        <div class="block">
+        <div class="block pt-5">
           This Package was built on the <a href="https://salesforce.com">Salesforce.com</a> platform as a managed package available to install.
-          <ul>
+          <ul class="list-disc list-inside">
             <li>
               <a href="https://www.lightningdesignsystem.com/">Salesforce Lightning Design System</a>
             </li>
@@ -134,10 +196,10 @@ const projects = [
             </li>
           </ul>
         </div>
-        <p class="block">
+        <p class="block pt-5">
           Some of the Languages/Programs used:
         </p>
-        <div class="space-x-1">
+        <div class="space-x-1 pt-2.5">
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">HTML</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">CSS</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">JavaScript</span>
@@ -162,9 +224,9 @@ const projects = [
           backwards compatablity of a given releases. This tool is now deprecated in favor of a partnership with AutoRabit that has this
           functionality and some built into there tool as a module.
         </p>
-        <div class="block">
+        <div class="block pt-5">
           This website was built on the Ruby on Rails architecture and styled using Materialize.
-          <ul>
+          <ul class="list-disc list-inside">
             <li>
               <a href="https://rubyonrails.org/">Ruby on Rails</a>
             </li>
@@ -173,10 +235,10 @@ const projects = [
             </li>
           </ul>
         </div>
-        <p class="block">
+        <p class="block pt-5">
           Some of the Languages/Programs used:
         </p>
-        <div class="space-x-1">
+        <div class="space-x-1 pt-2.5">
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">HTML</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">CSS</span>
           <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-red-100 text-red-800">JavaScript</span>
@@ -197,8 +259,8 @@ const projects = [
       <img src="/img/projects/salesforce.png" alt="Salesforce Logo" class="w-full"/>
       <div>
         <p class="block p-4">
-          Below are Salesforce Projects I have worked on at nCino and created to supliment the nCino Product that have since
-          been Depricated and merged into Product's Managed package in some manner.
+          Below are Salesforce Projects I have worked on at nCino and created to supplement the nCino Product that have since
+          been Deprecated and merged into Product's Managed package in some manner.
         </p>
 
         <ul class="divide-y divide-slate-200">
@@ -208,10 +270,10 @@ const projects = [
                 <div class="block focus:outline-none">
                   <span class="absolute inset-0" aria-hidden="true"></span>
                   <p class="text-sm font-medium text-slate-900">Project Management</p>
-                  <p class="text-sm text-slate-500">nCino Main Org (Now Depricated)</p>
+                  <p class="text-sm text-slate-500">nCino Main Org (Now Deprecated)</p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2015-2016</span>
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2015-2016</span>
             </div>
             <div class="mt-1">
               <p class="line-clamp-5 text-sm text-slate-600">
@@ -229,10 +291,10 @@ const projects = [
                   <div class="block focus:outline-none">
                       <span class="absolute inset-0" aria-hidden="true"></span>
                       <p class="text-sm font-medium text-slate-900">Customer Health</p>
-                      <p class="text-sm text-slate-500">nCino Main Org (Now Depricated)</p>
+                      <p class="text-sm text-slate-500">nCino Main Org (Now Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2015</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2015</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -249,7 +311,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Now Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -266,11 +328,11 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
-                  An addon package to the nCino Platform to help speed up the implamentation time of the nCino Platform
+                  An addon package to the nCino Platform to help speed up the implementation time of the nCino Platform
                   for Credit Memo"s, Config Values, and Product State Config.
                 </p>
             </div>
@@ -284,7 +346,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -302,7 +364,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -321,7 +383,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2016</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -339,7 +401,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2015</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2015</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -356,7 +418,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2015</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2015</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -373,7 +435,7 @@ const projects = [
                       <p class="text-sm text-slate-500">nCino Accelerator (Deprecated)</p>
                   </div>
                 </div>
-                <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">2016-2019</span>
+                <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">2016-2019</span>
             </div>
             <div class="mt-1">
                 <p class="line-clamp-5 text-sm text-slate-600">
@@ -412,7 +474,7 @@ const projects = [
                   </p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">
                 <a class="text-blue-500 cursor-pointer" href="https://github.com/chiefpansancolt/simple_form_materialize">Repo</a>
               </span>
             </div>
@@ -440,7 +502,7 @@ const projects = [
                   </p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">
                 <a class="text-blue-500 cursor-pointer" href="https://github.com/chiefpansancolt/devise_materialize">Repo</a>
               </span>
             </div>
@@ -467,13 +529,13 @@ const projects = [
                   </p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">
                 <a class="text-blue-500 cursor-pointer" href="https://github.com/rails/webpacker">Repo</a>
               </span>
             </div>
             <div class="mt-1">
               <p class="line-clamp-5 text-sm text-slate-600">
-                Ruby gem to make webpack compatiable with Ruby on Rails
+                Ruby gem to make webpack compatible with Ruby on Rails
               </p>
             </div>
           </li>
@@ -507,7 +569,7 @@ const projects = [
                   </p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">
                 <a class="text-blue-500 cursor-pointer" href="https://github.com/npezza93/archipelago">Repo</a>
               </span>
             </div>
@@ -536,7 +598,7 @@ const projects = [
                   </p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">
                 <a class="text-blue-500 cursor-pointer" href="https://github.com/npezza93/archipelago-atom">Repo</a>
               </span>
             </div>
@@ -561,7 +623,7 @@ const projects = [
                   </p>
                 </div>
               </div>
-              <span class="flex-shrink-0 whitespace-nowrap text-sm text-slate-500">
+              <span class="shrink-0 whitespace-nowrap text-sm text-slate-500">
                 <a class="text-blue-500 cursor-pointer" href="https://github.com/circleci/circleci-docs">Repo</a>
               </span>
             </div>

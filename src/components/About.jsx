@@ -19,10 +19,10 @@ export default function About() {
           <h2 className="text-xl font-semibold uppercase tracking-wide text-slate-50">About Me</h2>
           <p className="mt-4 text-base text-white">
             I am a Senior Solutions Architect for nCino, Inc, a software company based in
-            Wilmington, NC. Going on 9 years now, I have moved up from an entry position of Support
+            Wilmington, NC. Going on 12 years now, I have moved up from an entry position of Support
             Engineer and have been given many opportunities which lead me into my current role as a
-            Senior Solutions Architect. I live with my wife, daughter, and son and our 7 pets, 2
-            dogs, 4 cats and a bunny rabbit.
+            Senior Solutions Architect. I live with my wife, daughter, and son and our 8 pets, 3
+            dogs, 3 cats and a 2 rabbits.
           </p>
           <div className="flex-inline mt-8 flex">
             <div>
