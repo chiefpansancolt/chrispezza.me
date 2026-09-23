@@ -1,6 +1,5 @@
 import '@/styles/global.css'
 import { Inter } from 'next/font/google'
-import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,11 +22,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         {children}
-        <Script
-          defer
-          src="https://static.cloudflareinsights.com/beacon.min.js"
-          data-cf-beacon='{"token": "c040d9900f0a48d48fc10fdbb06b6c97"}'
-        />
       </body>
     </html>
   )
